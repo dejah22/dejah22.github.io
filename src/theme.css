@@ -1,0 +1,64 @@
+:root {
+  --bg: #ffffff;
+  --text: #333333;
+  --accent: #6c63ff;
+  --nav-bg: #f8f8f8;
+  --nav-active: #e0e0e0;
+}
+
+[data-theme="dark"] {
+  --bg: #1e1e1e;
+  --text: #e0e0e0;
+  --nav-bg: #2a2a2a;
+  --nav-active: #383838;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.navbar {
+  background: var(--nav-bg);
+  display: flex;
+  padding: 1rem 2rem;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.navbar a.active {
+  background: var(--nav-active);
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
