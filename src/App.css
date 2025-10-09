@@ -1,0 +1,26 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.main-content {
+  margin-left: 300px;
+  flex: 1;
+  background: #f7bc6e53;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+body {
+  padding-left: 250;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* For smaller screens */
+@media (max-width: 900px) {
+  .main-content {
+    margin-left: 0;
+  }
+}

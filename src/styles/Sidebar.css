@@ -1,0 +1,48 @@
+.sidebar {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  height: 100vh;
+  width: 300px;
+  background: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  overflow: hidden; /* ✅ ensures icons/text don’t spill */
+  z-index: 1000; /* ✅ ensures sidebar stays behind navbar if needed */
+}
+
+.name {
+  padding: 50px 10px 10px 10px;
+  font-size: larger;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ makes icons wrap safely */
+  gap: 1rem;
+  padding-bottom: 15rem;
+}
+
+.contact-section a {
+  color: #666;
+  font-size: 1.2rem;
+  transition: all 0.25s ease;
+}
+
+.contact-section a:hover {
+  color: #ff80ab;
+  transform: translateY(-3px) scale(1.15);
+  text-shadow: 0 0 8px rgba(255, 192, 203, 0.4);
+}
+
+/* responsive sidebar toggle */
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}

@@ -1,14 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
-import "./ProjectCard.css";
+import "../styles/ProjectCard.css";
 
 const ProjectCard = ({ title, desc, img, github }) => {
   return (
     <motion.div
       className="project-card"
-      whileHover={{ y: -6, boxShadow: "0 8px 20px rgba(106,90,205,0.15)" }}
-      transition={{ type: "spring", stiffness: 300 }}
+      whileHover={{
+        y: -15,
+        scale: 1.1,
+        boxShadow: "0 15px 30px rgba(200, 150, 255, 0.45)",
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 700,
+        damping: 40,
+      }}
     >
       <div className="image-container">
         <img src={img} alt={title} />
@@ -16,12 +24,7 @@ const ProjectCard = ({ title, desc, img, github }) => {
       <div className="card-content">
         <h3>{title}</h3>
         <p>{desc}</p>
-        <a
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="github-link"
-        >
+        <a href={github} className="github-link">
           <FaGithub size={20} />
         </a>
       </div>

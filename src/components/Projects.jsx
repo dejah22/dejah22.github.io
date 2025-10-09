@@ -10,19 +10,19 @@ const Projects = () => {
     {
       title: "AI Caption Generator",
       desc: "Real-time system that generates scene-aware captions for short videos.",
-    //   img: proj1,
+      //   img: proj1,
       github: "https://github.com/yourusername/ai-caption-generator",
     },
     {
       title: "Dance Pose Estimator",
       desc: "ML model trained to recognize classical dance postures from video frames.",
-    //   img: proj2,
+      //   img: proj2,
       github: "https://github.com/yourusername/dance-pose-estimator",
     },
     {
       title: "Emotion Classifier",
       desc: "NLP-based multi-label classifier for emotional tone detection in Urdu text.",
-    //   img: proj3,
+      //   img: proj3,
       github: "https://github.com/yourusername/emotion-classifier",
     },
   ];
@@ -30,13 +30,11 @@ const Projects = () => {
   return (
     <motion.div
       className="page-container"
+      style={{ padding: "10rem 5rem 0rem 3rem" }}
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.2 }}
     >
-      <h1>Projects</h1>
-      <p>Here are some things I’ve built with passion and curiosity.</p>
-
       <div className="projects-grid">
         {projects.map((proj, i) => (
           <ProjectCard key={i} {...proj} />
