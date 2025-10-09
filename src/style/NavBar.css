@@ -1,0 +1,118 @@
+/* ============ Navbar Container ============ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.25);
+}
+
+/* ============ Left (Home) ============ */
+.nav-left {
+  flex: 1;
+}
+
+/* ============ Right (Tabs) ============ */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* ============ Common Link Styles ============ */
+.nav-link {
+  --accent: #6a5acd; /* lavender accent */
+  --hover-bg: rgba(106, 90, 205, 0.08);
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: #444;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+/* Hover + glow */
+.nav-link:hover {
+  color: var(--accent);
+  background-color: var(--hover-bg);
+  box-shadow: 0 3px 8px rgba(106, 90, 205, 0.1);
+}
+
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 60%;
+}
+
+/* Active look */
+.nav-link.active {
+  color: var(--accent);
+  background-color: var(--hover-bg);
+  box-shadow: 0 4px 10px rgba(106, 90, 205, 0.12);
+}
+
+/* ============ Brand (Home) Special Styling ============ */
+.nav-link.brand {
+  font-weight: 1000;
+  font-size: 1.5rem;
+  color: var(--accent);
+  background: transparent;
+  box-shadow: none;
+  letter-spacing: 0.5px;
+  padding: 0.4rem 0;
+}
+
+.nav-link.brand:hover {
+  background-color: transparent;
+  color: var(--accent);
+  transform: scale(1.03);
+}
+
+.nav-link.brand::after {
+  display: none; /* no underline for Home */
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .nav-list {
+    gap: 1.4rem;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+}
