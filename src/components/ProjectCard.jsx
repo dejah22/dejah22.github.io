@@ -7,15 +7,28 @@ const ProjectCard = ({ title, desc, img, github }) => {
   return (
     <motion.div
       className="project-card"
+      // uncomment when you wanna let it loose :P
+      /*
       whileHover={{
         y: -15,
         scale: 1.1,
-        boxShadow: "0 15px 30px rgba(200, 150, 255, 0.45)",
+        boxShadow: "0 15px 30px rgba(210, 160, 100, 0.45)",
       }}
       transition={{
         type: "spring",
-        stiffness: 700,
-        damping: 40,
+        stiffness: 300,
+        damping: -1,
+      }}
+        */
+      whileHover={{
+        y: -15,
+        scale: 1.1,
+        boxShadow: "0 15px 30px rgba(210, 160, 100, 0.45)",
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 70,
+        damping: 3,
       }}
     >
       <div className="image-container">

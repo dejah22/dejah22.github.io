@@ -8,7 +8,7 @@
 
 /* Card container */
 .project-card {
-  background: #fff;
+  background: rgba(255, 249, 240, 0.85);
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
@@ -19,13 +19,16 @@
   height: 280px;
   width: 100%;
   max-width: 360px;
-  box-shadow: 0 3px 10px rgba(180, 160, 255, 0.1);
-  transition: box-shadow 0.2s ease;
+  border: none;
+  box-shadow: none;
+  transition: box-shadow 0.25s ease, border 0.25s ease, transform 0.25s ease;
 }
 
-/* Add a glow on hover */
+/* Hover effect */
 .project-card:hover {
-  border: 1px solid rgba(200, 150, 255, 0.3);
+  border: 1px solid rgba(250, 220, 190, 0.35);
+  box-shadow: 0 4px 14px rgba(210, 160, 100, 0.45);
+  transform: translateY(-4px);
 }
 
 /* Image */
@@ -33,7 +36,6 @@
   flex: 0 0 65%;
   width: 100%;
   overflow: hidden;
-  border-bottom: 1px solid #eee;
 }
 
 .image-container img {
@@ -50,15 +52,15 @@
 }
 
 .card-content h3 {
-  margin: 0rem 0;
+  margin: 0;
   font-size: 1rem;
-  color: #2b2340;
+  color: #402f23;
   font-weight: 600;
 }
 
 .card-content p {
   font-size: 0.85rem;
-  color: #6f6f8a;
+  color: #8a806f;
   margin: 0.2rem 0 1.8rem;
 }
 
@@ -67,13 +69,13 @@
   position: absolute;
   bottom: 0.8rem;
   right: 1rem;
-  color: #b598ff;
+  color: #b8925f;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .github-link:hover {
   transform: scale(1.2);
-  color: #9e80ff;
+  color: #e3b97a;
 }
 
 /* Responsive */
@@ -88,4 +90,15 @@
     height: 260px;
     max-width: 90%;
   }
+}
+
+/* Focus styles */
+.project-card:focus-visible {
+  outline: 2px solid rgba(210, 160, 100, 0.4);
+  outline-offset: 3px;
+}
+
+a:focus,
+a:focus-visible {
+  outline: none;
 }

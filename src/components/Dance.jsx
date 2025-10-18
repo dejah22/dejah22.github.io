@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const danceVideos = [
   {
-    title: 'Brahmam Okate – Bharatanatyam performance',
-    desc: 'An interpretation of devotion and rhythm in movement.',
-    url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    title: "Brahmam Okate – Bharatanatyam performance",
+    desc: "An interpretation of devotion and rhythm in movement.",
+    url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
-    title: 'Fusion Choreography',
-    desc: 'Combining classical forms with modern expression.',
-    url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    title: "Fusion Choreography",
+    desc: "Combining classical forms with modern expression.",
+    url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   // more
 ];
@@ -17,9 +17,9 @@ const danceVideos = [
 export default function Dance() {
   return (
     <section className="section" id="dance">
-      <h2>Dance</h2>
+      <img src="../assets/portfolio.jpg"></img>
       {danceVideos.map((v, idx) => (
-        <div key={idx} style={{ marginBottom: '2rem' }}>
+        <div key={idx} style={{ marginBottom: "2rem" }}>
           <div className="video-container">
             <iframe
               src={v.url}
