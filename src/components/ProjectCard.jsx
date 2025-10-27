@@ -23,7 +23,7 @@ const ProjectCard = ({ title, desc, img, github }) => {
       whileHover={{
         y: -15,
         scale: 1.1,
-        boxShadow: "0 15px 30px rgba(210, 160, 100, 0.45)",
+        boxShadow: "0 15px 30px rgba(176, 132, 78, 0.45)",
       }}
       transition={{
         type: "spring",

@@ -4,7 +4,7 @@
   left: 0;
   height: 100vh;
   width: 300px;
-  background: rgba(252, 227, 190, 0.373);
+  background-color: rgba(252, 227, 190, 0.373);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,6 +12,76 @@
   padding: 2rem 1rem;
   overflow: hidden;
   z-index: 1000;
+}
+
+.sidebar-dance {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(252, 227, 190, 0.373);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  overflow: hidden;
+  z-index: 1000;
+
+  /* optional blur effect for overlapping content */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.sidebar-dance::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/dance-bg.png");
+  background-repeat: repeat;
+
+  /* make only the image translucent */
+  opacity: 0.2;
+
+  z-index: -1; /* behind everything */
+}
+
+.profile-section {
+  text-align: center;
+  padding-top: 3rem;
+  padding-right: 2rem;
+}
+
+.profile-pic-wrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 4px 15px rgba(247, 188, 110, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.profile-pic-wrapper-dance {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 4px 15px rgba(247, 188, 110, 0.35);
+  transition: transform 0.3s ease;
+  transform: rotate(-5deg);
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .name {

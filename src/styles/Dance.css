@@ -1,0 +1,144 @@
+.dance-page {
+  padding: 8rem 2rem 3rem 2rem;
+  background-color: #ffddcd8a;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+}
+
+.hero-image {
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.25);
+  animation: fadeIn 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.dance-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 0.4fr);
+  gap: 2rem;
+  padding-top: 2rem;
+  justify-items: center;
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* CARD */
+.dance-card {
+  position: relative; /* 🧩 keeps the icon positioned inside */
+  background: #fff8f2;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.dance-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGE */
+.dance-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: block;
+  position: relative;
+  z-index: 1; /* below the icon */
+}
+
+/* ICON */
+.youtube-link {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 0.5rem;
+  z-index: 3; /* ensures it’s above everything */
+  opacity: 0.8;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-link:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* CONTENT */
+.dance-card-content {
+  padding: 0.3rem 0.3rem 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2; /* above background */
+}
+
+.dance-card-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.dance-card-content p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* responsive adjustments */
+@media (max-width: 900px) {
+  .dance-page {
+    margin-left: 0;
+    padding: 5rem 1rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .dance-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

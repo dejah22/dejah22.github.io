@@ -9,13 +9,13 @@ const Projects = () => {
   const projects = [
     {
       title: "AI Caption Generator",
-      desc: "Real-time system that generates scene-aware captions for short videos.",
+      desc: "Real-time system that generates scene-aware captions.",
       //   img: proj1,
       github: "https://github.com/yourusername/ai-caption-generator",
     },
     {
       title: "Dance Pose Estimator",
-      desc: "ML model trained to recognize classical dance postures from video frames.",
+      desc: "ML model trained to recognize classical dance postures from.",
       //   img: proj2,
       github: "https://github.com/yourusername/dance-pose-estimator",
     },

@@ -7,7 +7,8 @@ export default function Navbar() {
     { name: "Research", path: "/research" },
     { name: "Projects", path: "/projects" },
     { name: "Dance", path: "/dance" },
-    { name: "Blog", path: "/blog" },
+    // { name: "Blog", path: "/blog" },
+    { name: "Certifications", path: "/certifications" },
   ];
 
   return (
