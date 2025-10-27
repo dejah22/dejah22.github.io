@@ -1,17 +1,28 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import "../styles/Sidebar.css";
-// import profilePic from "../../assets/profile.jpg"; // your image file
+import profilePic from "../assets/profile.jpeg";
+import dancePic from "../assets/dance-profile.jpg";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Sidebar = () => {
+  const location = useLocation();
+
+  const isDancePage = location.pathname.includes("/dance");
   return (
-    <div className="sidebar">
+    <div className={`sidebar${isDancePage ? "-dance" : ""}`}>
       <div className="profile-section">
-        {/* <img src={profilePic} alt="Profile" className="profile-pic" /> */}
+        <div className={`profile-pic-wrapper${isDancePage ? "-dance" : ""}`}>
+          <img
+            src={isDancePage ? dancePic : profilePic}
+            alt="Profile"
+            className="profile-pic"
+          />
+        </div>
         <p className="name">Dejah Madhusankar</p>
         <p className="bio">
-          Researcher • Dancer • Developer <br />
-          Exploring the intersection of AI, creativity, and emotion.
+          • Student Researcher • Engineer • Dancer <br />
+          Exploring the intersection of AI, movement, and emotion.
         </p>
       </div>
 
