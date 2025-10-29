@@ -1,8 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
+  const location = useLocation();
+  const isDancePage = location.pathname.includes("/dance");
+
   const tabs = [
     { name: "Research", path: "/research" },
     { name: "Projects", path: "/projects" },
@@ -12,7 +15,10 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="navbar" aria-label="Main navigation">
+    <nav
+      className={`navbar${isDancePage ? "-dance" : ""}`}
+      aria-label="Main navigation"
+    >
       {/* Left side — Home */}
       <div className="nav-left">
         <NavLink

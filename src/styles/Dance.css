@@ -1,8 +1,22 @@
 .dance-page {
   padding: 8rem 2rem 3rem 2rem;
-  background-color: #ffddcd8a;
+  /* background-color: #f7bc6e67; */
+  background-color: #ffe1ba55;
   min-height: 100vh;
   box-sizing: border-box;
+}
+
+.dance-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/dance-bg.png");
+  background-repeat: repeat;
+
+  /* make only the image translucent */
+  opacity: 0.2;
+
+  z-index: 0; /* behind everything */
 }
 
 .hero-section {
