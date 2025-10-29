@@ -1,30 +1,44 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
-// import proj1 from "../assets/project1.jpg";
-// import proj2 from "../assets/project2.jpg";
-// import proj3 from "../assets/project3.jpg";
+import noteAppPic from "../assets/noteApp.png";
+import carbonFootprintPic from "../assets/carbonFootprint.png";
+import nmapPic from "../assets/nmap.png";
+import digitalPaperNotesPic from "../assets/digitalPaperNotes.jpg";
+import wordDevilPic from "../assets/wordDevil.png";
 
 const Projects = () => {
   const projects = [
     {
-      title: "AI Caption Generator",
-      desc: "Real-time system that generates scene-aware captions.",
-      //   img: proj1,
-      github: "https://github.com/yourusername/ai-caption-generator",
+      title: "Cutesy Digital Paper-pad with Animated Writing and Scratch Sounds",
+      desc: "As users type, text is rendered as animated handwriting strokes on digital lined paper, while synchronized pencil scratch audio creates the illusion of physically writing on a notebook.",
+        img: digitalPaperNotesPic,
+      github: "https://github.com/dejah22/digital_paper_notes",
     },
     {
-      title: "Dance Pose Estimator",
-      desc: "ML model trained to recognize classical dance postures from.",
-      //   img: proj2,
-      github: "https://github.com/yourusername/dance-pose-estimator",
+      title: "NetMapper",
+      desc: "Practical Experiments in Network Protocols and Attacks (Similar to Nmap)",
+        img: nmapPic,
+      github: "https://github.com/dejah22/NetMapper",
     },
     {
-      title: "Emotion Classifier",
-      desc: "NLP-based multi-label classifier for emotional tone detection in Urdu text.",
-      //   img: proj3,
-      github: "https://github.com/yourusername/emotion-classifier",
+      title: "Pretty Notes app",
+      desc: "An intuitive, minimalist and visually appealing note-making app for seamless note-taking.",
+      img: noteAppPic,
+      github: "https://github.com/dejah22/Pretty_Notes-FE",
     },
+    {
+      title: "Carbon Footprint Tracker",
+      desc: "End-to-end browser app that calculates and tracks your carbon footprint, with the aim of fostering a greener planet",
+      img: carbonFootprintPic,
+      github: "https://github.com/dejah22/Carbon-Footprint-Tracker",
+    },
+    {
+      title: "Word devil",
+      desc: "A spooky twist to the popular game Hangman, built using primitive Turbo C++ during my school days!",
+      img: wordDevilPic,
+      github: "https://github.com/dejah22/Word-Devil",
+    }
   ];
 
   return (
