@@ -2,26 +2,37 @@ import React from "react";
 import "../styles/Dance.css";
 import DanceCard from "../components/DanceCard";
 import danceCover from "../assets/dance-cover-ann.jpg";
+import varnam from "../assets/varnam2_thumbnail_1.png";
+import brahmam from "../assets/brahmamokate_thumbnail.jpg";
+import pushpanjali from "../assets/Pushpanjali_2.jpg";
+import shabdham from "../assets/Shabdham_1.png";
+
 const Dance = () => {
   const projects = [
     {
-      image: "https://via.placeholder.com/300x200",
-      title: "Choreography 1",
-      desc: "An experimental fusion of classical and modern forms.",
-      github: "https://github.com/yourproject1",
+      image: varnam,
+      title: "Varnam Vachaspathi",
+      desc: "Varnam is a centerpiece of Indian classical dance that combines intricate rhythms, graceful movements and heartfelt expressions.",
+      youtube: "https://www.youtube.com/watch?v=8iPHOOw55nA",
     },
     {
-      image: "https://via.placeholder.com/300x200",
-      title: "Performance 2",
-      desc: "Live performance integrating AI motion capture.",
-      github: "https://github.com/yourproject2",
+      image: brahmam,
+      title: "Brahmam Okate",
+      desc: "Presenting a Bharatanatyam rendition of \"Brahmam Okate\", a timeless Keerthana composed by Sri Annamacharya. This dance is to spread awareness about the oneness of all beings, reminding us that everyone and everything was created equal.",
+      youtube: "https://www.youtube.com/watch?v=YRfWTIQgSPU",
     },
     {
-      image: danceCover,
-      title: "Dance Cover",
-      desc: "A creative short blending music, movement, and visual storytelling.",
-      github: "https://github.com/yourproject3",
+      image: pushpanjali,
+      title: "Pushpanjali Gambheera Naattai",
+      desc: "Pushpanjali is the offering of flowers to Hindu gods and goddesses, as a means of honour and invocation of blessings. It is an invocatory dance conducted at the beginning of a Bharatanatyam performance, and is the salutation to Lord Nataraja, the Guru, the musicians, and the audience.",
+      youtube: "https://www.youtube.com/watch?v=XjJhiG36XTI",
     },
+    {
+      image: shabdham,
+      title: "Venuganane Shabdham",
+      desc: "INSERT DESCRIPTION HERE",
+      youtube: "https://www.youtube.com/watch?v=3xHD7CxjsLQ",
+    }
   ];
 
   return (
@@ -37,7 +48,7 @@ const Dance = () => {
             img={p.image}
             title={p.title}
             desc={p.desc}
-            github={p.github}
+            youtube={p.youtube}
           />
         ))}
       </div>

@@ -4,7 +4,7 @@ import { FaGithub, FaYoutube } from "react-icons/fa";
 import "../styles/ProjectCard.css";
 import danceCover from "../assets/dance-cover-ann.jpg";
 
-const DanceCard = ({ title, desc, img, github }) => {
+const DanceCard = ({ title, desc, img, youtube }) => {
   return (
     <motion.div
       className="dance-card"
@@ -23,7 +23,7 @@ const DanceCard = ({ title, desc, img, github }) => {
       <div className="dance-card-content">
         <h3>{title}</h3>
         <p>{desc}</p>
-        <a href={github} className="youtube-link">
+        <a href={youtube} className="youtube-link">
           <FaYoutube color="red" size={30} />
         </a>
       </div>

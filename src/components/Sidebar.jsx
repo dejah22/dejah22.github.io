@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import "../styles/Sidebar.css";
 import profilePic from "../assets/profile.jpeg";
 import dancePic from "../assets/dance-profile.jpg";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaGraduationCap } from "react-icons/fa";
 
 const Sidebar = () => {
   const location = useLocation();
@@ -27,14 +27,17 @@ const Sidebar = () => {
       </div>
 
       <div className="contact-section">
-        <a href="https://github.com/yourgithub">
+        <a href="https://github.com/dejah22">
           <FaGithub />
         </a>
-        <a href="https://linkedin.com/in/yourlinkedin">
+        <a href="https://www.linkedin.com/in/dejah-madhusankar/">
           <FaLinkedin />
         </a>
-        <a href="mailto:yourmail@example.com">
+        <a href="mailto:dejah9465@gmail.com">
           <FaEnvelope />
+        </a>
+        <a href="https://scholar.google.com/citations?user=10rvNFUAAAAJ&hl=en&oi=ao">
+          <FaGraduationCap />
         </a>
       </div>
     </div>
