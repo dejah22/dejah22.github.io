@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: "Projects", path: "/projects" },
     { name: "Dance", path: "/dance" },
     // { name: "Blog", path: "/blog" },
-    { name: "Certifications", path: "/certifications" },
+    // { name: "Certifications", path: "/certifications" },
   ];
 
   return (

@@ -1,0 +1,92 @@
+.research-page {
+  padding: 8rem 3rem 3rem 5rem;
+  background-color: #fffaf4;
+  min-height: 100vh;
+  color: #402f23;
+}
+
+.research-title {
+  font-family: "SF Pro Display", "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: #3d2b1f;
+}
+
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.research-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  padding: 1rem 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.paper-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.citation {
+  font-weight: 700;
+  color: #8b613a;
+  margin-left: 0.3rem;
+}
+
+.authors {
+  font-size: 0.95rem;
+  color: #746a5e;
+  margin: -0.5rem 0 1rem 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-abstract,
+.btn-paper {
+  background: transparent;
+  border: 2px solid #8b6b4f; /* warm brown */
+  color: #3d2b1f;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-abstract:hover,
+.btn-paper:hover {
+  background-color: #8b6b4f;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Drawer */
+.abstract-drawer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.3s ease;
+  padding: 0;
+  opacity: 0;
+  color: #4e3a28;
+}
+
+.abstract-drawer.open {
+  max-height: 500px;
+  padding: 1rem 0 0 0;
+  opacity: 1;
+}
