@@ -7,6 +7,7 @@ import nmapPic from "../assets/nmap.png";
 import digitalPaperNotesPic from "../assets/digitalPaperNotes.jpg";
 import wordDevilPic from "../assets/wordDevil.png";
 import personalPortfolioPic from "../assets/personalPortfolioPic.jpg"
+import musicAutoSkipperPic from "../assets/musicAutoSkipperPic.png"
 import { CiTextAlignLeft } from "react-icons/ci";
 
 const Projects = () => {
@@ -54,6 +55,12 @@ const Projects = () => {
       img: personalPortfolioPic,
       github: "https://github.com/dejah22/dejah22.github.io",
     },
+    {
+      title: "Music Auto Skipper",
+      desc: "Music Auto Skipper is an Android app that automatically skips songs on YouTube Music or Spotify after a specified percentage of playback.",
+      img: musicAutoSkipperPic,
+      github: "https://github.com/dejah22/dejah22.github.io",
+    }
   ];
 
   return (
