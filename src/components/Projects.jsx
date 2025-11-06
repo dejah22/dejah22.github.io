@@ -13,21 +13,20 @@ import { CiTextAlignLeft } from "react-icons/ci";
 const Projects = () => {
   const projects = [
     {
-      title:
-        "Cutesy Digital Paper-pad with Animated Writing and Scratch Sounds",
+      title: "Digital Paper-pad with Animated Writing and Interactive Sounds",
       desc: "As users type, text is rendered as animated handwriting strokes on digital lined paper, while synchronized pencil scratch audio creates the illusion of physically writing on a notebook. Tech used: React, Tailwind CSS, Typescript, Howler.js",
       img: digitalPaperNotesPic,
       github: "https://github.com/dejah22/digital_paper_notes",
     },
     {
       title: "NetMapper",
-      desc: "Practical Experiments in Network Protocols and Attacks (Similar to Nmap). Tech used: C/C++, POSIX Networking APIs",
+      desc: "An Nmap clone that simulates popular Network Protocols and Attack. Tech used: C/C++, POSIX Networking APIs",
       img: nmapPic,
       github: "https://github.com/dejah22/NetMapper",
     },
     {
       title: "Pretty Notes app",
-      desc: "An intuitive, minimalist and visually appealing note-making app for seamless note-taking. Tech used: React, CSS, Springboot, Axios",
+      desc: "End-to-end note-making app similar to Google Keep. Tech used: React, CSS, Springboot, Axios",
       img: noteAppPic,
       github: "https://github.com/dejah22/Pretty_Notes-FE",
     },
@@ -45,22 +44,22 @@ const Projects = () => {
     },
     {
       title: "Live Pose Estimation and Feedback for Bharatanatyam Dance Poses",
-      desc: "This project uses computer vision and AI-based similarity scoring to evaluate Bharatanatyam dance postures in real-time. By normalizing human body landmarks, the system provides pose-invariant comparisons and dynamic feedback to learners and practioners. Switch on your webcam and strike a pose!. Tech used: Python, MediaPipe, OpenCV, Numpy, TensorFlow.",
+      desc: "Real-time intelligent tutor for perfecting Bharatanatyam poses.  Identifies and matches poses while providing live feedback with corrections. Switch on your webcam and strike a pose!. Tech used: Python, MediaPipe, OpenCV, Numpy, TensorFlow.",
       img: wordDevilPic,
       github:
         "https://github.com/dejah22/live-pose-estimation-feedback-for-dance-poses",
     },
     {
       title: "Personal Portfolio",
-      desc: "A modern, responsive personal portfolio website built to showcase my projects, skills, and experience. The portfolio serves as a central hub where visitors can learn more about me, explore my work, and get in touch. Tech used: React, Vite, CSS",
+      desc: "My personal portfolio website to showcase my projects, skills, and experience. Tech used: React, Vite, CSS",
       img: personalPortfolioPic,
       github: "https://github.com/dejah22/dejah22.github.io",
     },
     {
-      title: "Music Auto Skipper",
-      desc: "Music Auto Skipper is an Android app that automatically skips songs on YouTube Music or Spotify after a specified percentage of playback.",
+      title: "Automatic Music Skipper",
+      desc: "An Android app that automatically skips songs on YouTube Music or Spotify after a specified percentage of playback.",
       img: musicAutoSkipperPic,
-      github: "https://github.com/dejah22/dejah22.github.io",
+      github: "https://github.com/dejah22/AutomaticMusicSkipper",
     },
   ];
 
