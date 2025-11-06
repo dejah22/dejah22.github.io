@@ -56,10 +56,10 @@ const Projects = () => {
       github: "https://github.com/dejah22/dejah22.github.io",
     },
     {
-      title: "Music Auto Skipper",
+      title: "Automatic Music Skipper",
       desc: "Music Auto Skipper is an Android app that automatically skips songs on YouTube Music or Spotify after a specified percentage of playback.",
       img: musicAutoSkipperPic,
-      github: "https://github.com/dejah22/dejah22.github.io",
+      github: "https://github.com/dejah22/AutomaticMusicSkipper",
     }
   ];
 
