@@ -4,14 +4,17 @@ import "../styles/Research.css";
 
 const papers = [
   {
+    id: 0,
+    title:
+      "Pose and Expression Inference in Bharatanatyam using Region-Based Analysis and Hierarchical Modeling (Ongoing)",
+    authors: `<u>Dejah Madhusankar</u>, S. Karthika, R. Srinivasan`,
+  },
+  {
     id: 1,
     title:
       "Posture Extraction and Deduplication in Jathiswaram Dances via Similarity Filtering",
     citation: "(Under Review @ Elsevier ICMLDE 2025)",
     authors: `<u>Dejah Madhusankar</u>,  S. Karthika, R. Srinivasan`,
-    abstract:
-      "We propose a multimodal transformer model that synchronizes visual and textual representations for real-time captioning of short-form videos...",
-    link: "https://example.com/paper1.pdf",
   },
   {
     id: 2,
@@ -29,7 +32,7 @@ const papers = [
     citation: "(CEUR-WS EmoThreat@FIRE 2022)",
     authors: `<u>Dejah Madhusankar</u>, Avanthika Karthikeyan, B Bharathi`,
     abstract:
-      " With the massive growth and widespread usage of social media platforms, the rates of its misuse and its corresponding impact on society have seen an exponential rise in numbers. The comfort of anonymity and wide reach offered by social media has led to the convenient spread of hatred and incitement to threats, that are often targeted against particular users and communities. Thus identifying hate speech, threats and intense emotions in the digital arena has gained attention recently. This is also the aim of the EmoThreat: Emotions and Threat Detection in Urdu 2022 challenge. In this paper, we describe a few traditional machine learning models and deep neural networks submitted by our team Aces for Task A: Multi-label emotion classification in Urdu. The models tested include Classifier Chains, MLKNN, RNN and LSTM Networks implemented with a combination of feature extraction methods such as the Count Vectorizer and TF-IDF, as well as embedding models like Word2Vec and FastText. Each model has been discussed in detail in Section 4 after a brief overview of the dataset adopted, in Section 3. Out of these tested permutations, the lassifier Chains model with TF-IDF vectorization proved to give the most promising results, which has been detailed in Section 5",
+      " With the massive growth and widespread usage of social media platforms, the rates of its misuse and its corresponding impact on society have seen an exponential rise in numbers. The comfort of anonymity and wide reach offered by social media has led to the convenient spread of hatred and incitement to threats, that are often targeted against particular users and communities. Thus identifying hate speech, threats and intense emotions in the digital arena has gained attention recently. This is also the aim of the EmoThreat: Emotions and Threat Detection in Urdu 2022 challenge. In this paper, we describe a few traditional machine learning models and deep neural networks submitted by our team...",
     link: "https://ceur-ws.org/Vol-3395/T4-2.pdf",
   },
   {
@@ -39,7 +42,7 @@ const papers = [
     citation: "(SIVP Supplement 2025)",
     authors: `KR Sarath Chandran, <u>Dejah Madhusankar</u>, Krithika Swaminathan (all authors contributed equally)`,
     abstract:
-      "This supplementary document provides a detailed account of the implementation aspects of the proposed video captioning system. It is organized into four main sections: Feature Extraction and Fusion, which explains the integration of visual features from VGG16 and YOLOv8; Attention Layer, which describes the standard and custom attention mechanisms used to guide the input to the LSTM; Encoder-Decoder Architecture, outlining the structure of the sequence generation model; and Caption Generation, which details the process of generating natural language descriptions from video frames. Together, these sections offer in-depth technical details for the methodology presented in the main paper.",
+      "This supplementary paper provides a detailed account of the implementation aspects of the proposed video captioning system. It is organized into four main sections: Feature Extraction and Fusion, which explains the integration of visual features from VGG16 and YOLOv8; Attention Layer, which describes the standard and custom attention mechanisms used to guide the input to the LSTM; Encoder-Decoder Architecture, outlining the structure of the sequence generation model; and Caption Generation, which details the process of generating natural language descriptions from video frames. Together, these sections offer in-depth technical details for the methodology presented in the main paper.",
     link: "https://static-content.springer.com/esm/art%3A10.1007%2Fs11760-025-04622-6/MediaObjects/11760_2025_4622_MOESM1_ESM.pdf",
   },
   {
@@ -49,7 +52,7 @@ const papers = [
     citation: "(SIVP Supplement 2025)",
     authors: `KR Sarath Chandran, <u>Dejah Madhusankar</u>, Krithika Swaminathan (all authors contributed equally)`,
     abstract:
-      "This supplementary document presents the evaluation criteria and hardware environment used to assess the performance of the proposed video captioning system. It includes a description of the evaluation metrics adopted to measure caption quality, and details the hardware specifications available in the Google Colab environment where training and inference were conducted. These details are provided to ensure transparency and reproducibility of the reported results.",
+      "This supplementary paper presents the evaluation criteria and hardware environment used to assess the performance of the proposed video captioning system. It includes a description of the evaluation metrics adopted to measure caption quality, and details the hardware specifications available in the Google Colab environment where training and inference were conducted. These details are provided to ensure transparency and reproducibility of the reported results.",
     link: "https://static-content.springer.com/esm/art%3A10.1007%2Fs11760-025-04622-6/MediaObjects/11760_2025_4622_MOESM2_ESM.pdf",
   },
 ];

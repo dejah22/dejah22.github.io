@@ -23,9 +23,11 @@ const DanceCard = ({ title, desc, img, youtube }) => {
       <div className="dance-card-content">
         <h3>{title}</h3>
         <p>{desc}</p>
-        <a href={youtube} className="youtube-link">
-          <FaYoutube color="red" size={30} />
-        </a>
+        {youtube && (
+          <a href={youtube} className="youtube-link">
+            <FaYoutube color="red" size={30} />
+          </a>
+        )}
       </div>
     </motion.div>
   );

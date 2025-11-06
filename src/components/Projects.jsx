@@ -2,64 +2,74 @@ import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import noteAppPic from "../assets/noteApp.png";
-import carbonFootprintPic from "../assets/carbonFootprint.png";
+import carbonFootprintPic from "../assets/carbonFootprint.jpg";
 import nmapPic from "../assets/nmap.png";
 import digitalPaperNotesPic from "../assets/digitalPaperNotes.jpg";
 import wordDevilPic from "../assets/wordDevil.png";
 import personalPortfolioPic from "../assets/personalPortfolioPic.jpg";
 import musicAutoSkipperPic from "../assets/musicAutoSkipperPic.png";
-import { CiTextAlignLeft } from "react-icons/ci";
+import skeleton from "../assets/skeleton.jpeg";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Digital Paper-pad with Animated Writing and Interactive Sounds",
-      desc: "As users type, text is rendered as animated handwriting strokes on digital lined paper, while synchronized pencil scratch audio creates the illusion of physically writing on a notebook. Tech used: React, Tailwind CSS, Typescript, Howler.js",
-      img: digitalPaperNotesPic,
-      github: "https://github.com/dejah22/digital_paper_notes",
-    },
-    {
       title: "NetMapper",
-      desc: "An Nmap clone that simulates popular Network Protocols and Attack. Tech used: C/C++, POSIX Networking APIs",
+      desc: "A from-scratch Nmap clone that simulates popular Network Protocols and Attacks",
       img: nmapPic,
       github: "https://github.com/dejah22/NetMapper",
+      tools: ["C/C++", "Socket Programming"],
     },
     {
-      title: "Pretty Notes app",
-      desc: "End-to-end note-making app similar to Google Keep. Tech used: React, CSS, Springboot, Axios",
-      img: noteAppPic,
-      github: "https://github.com/dejah22/Pretty_Notes-FE",
+      title: "PosePerfect",
+      desc: "Real-time AI tutor for perfecting your classical dance pose! Identifies, matches and fixes your poses with live feedback",
+      img: skeleton,
+      github:
+        "https://github.com/dejah22/live-pose-estimation-feedback-for-dance-poses",
+      tools: ["Python", "OpenCV", "TensorFlow", "Mediapipe", "NumPy"],
     },
     {
       title: "Carbon Footprint Tracker",
-      desc: "End-to-end browser app that calculates and tracks your carbon footprint, with the aim of fostering a greener planet. Tech used: Apache Tomcat Servlet Container, Java, MySQL, HTML, CSS",
+      desc: "End-to-end app that calculates and tracks your carbon footprint, with the aim of fostering a greener planet",
       img: carbonFootprintPic,
       github: "https://github.com/dejah22/Carbon-Footprint-Tracker",
-    },
-    {
-      title: "Word devil",
-      desc: "A spooky twist to the popular game Hangman, built using primitive Turbo C++ during my school days!. Tech used: Turbo C++",
-      img: wordDevilPic,
-      github: "https://github.com/dejah22/Word-Devil",
-    },
-    {
-      title: "Live Pose Estimation and Feedback for Bharatanatyam Dance Poses",
-      desc: "Real-time intelligent tutor for perfecting Bharatanatyam poses.  Identifies and matches poses while providing live feedback with corrections. Switch on your webcam and strike a pose!. Tech used: Python, MediaPipe, OpenCV, Numpy, TensorFlow.",
-      img: wordDevilPic,
-      github:
-        "https://github.com/dejah22/live-pose-estimation-feedback-for-dance-poses",
-    },
-    {
-      title: "Personal Portfolio",
-      desc: "My personal portfolio website to showcase my projects, skills, and experience. Tech used: React, Vite, CSS",
-      img: personalPortfolioPic,
-      github: "https://github.com/dejah22/dejah22.github.io",
+      tools: ["Java", "Tomcat JDBC Servlets", "MySQL", "HTML/CSS"],
     },
     {
       title: "Automatic Music Skipper",
       desc: "An Android app that automatically skips songs on YouTube Music or Spotify after a specified percentage of playback.",
       img: musicAutoSkipperPic,
       github: "https://github.com/dejah22/AutomaticMusicSkipper",
+      tools: ["Java", "Android Studio"],
+    },
+
+    {
+      title: "NoteBoard",
+      desc: "Minimalistic Note-Making app to pin up your quick notes, similar to Google Keep",
+      img: noteAppPic,
+      github: "https://github.com/dejah22/Pretty_Notes-FE",
+      tools: ["React", "Java SpringBoot", "PostgreSQL"],
+    },
+    {
+      title: "Word devil",
+      desc: "A spooky twist to the popular game Hangman, built using primitive Turbo C++ during my school days!",
+      img: wordDevilPic,
+      github: "https://github.com/dejah22/Word-Devil",
+      tools: ["Turbo C++", "MSDOS"],
+    },
+    {
+      title: "Personal Portfolio",
+      desc: "My personal portfolio website",
+      img: personalPortfolioPic,
+      github: "https://github.com/dejah22/dejah22.github.io",
+      tools: ["React", "Vite", "HTML/CSS", "JavaScript"],
+    },
+
+    {
+      title: "Digital Paper-pad with Interactive Writing and Sounds",
+      desc: "As users type, text is rendered as animated strokes with synchronized pencil scratch audio that creates the illusion of writing on a notebook",
+      img: digitalPaperNotesPic,
+      github: "https://github.com/dejah22/digital_paper_notes",
+      tools: ["JavaScript", "React", "Howler"],
     },
   ];
 

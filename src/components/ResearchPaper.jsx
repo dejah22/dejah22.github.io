@@ -14,19 +14,19 @@ const ResearchPaper = ({ paper }) => {
           className="authors"
           dangerouslySetInnerHTML={{ __html: paper.authors }}
         />
-        {/* {paper.authors}</p> */}
-
-        <div className="button-group">
-          <button
-            className="btn-abstract"
-            onClick={() => setShowAbstract(!showAbstract)}
-          >
-            {showAbstract ? "Hide Abstract" : "Abstract"}
-          </button>
-          <a className="btn-paper" href={paper.link}>
-            Paper
-          </a>
-        </div>
+        {paper.abstract && paper.link && (
+          <div className="button-group">
+            <button
+              className="btn-abstract"
+              onClick={() => setShowAbstract(!showAbstract)}
+            >
+              {showAbstract ? "Hide Abstract" : "Abstract"}
+            </button>
+            <a className="btn-paper" href={paper.link}>
+              Paper
+            </a>
+          </div>
+        )}
       </div>
 
       {/* Abstract Drawer */}

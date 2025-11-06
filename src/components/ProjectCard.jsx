@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import "../styles/ProjectCard.css";
 
-const ProjectCard = ({ title, desc, img, github }) => {
+const ProjectCard = ({ title, desc, img, github, tools }) => {
   return (
     <motion.div
       className="project-card"
@@ -37,6 +37,16 @@ const ProjectCard = ({ title, desc, img, github }) => {
       <div className="card-content">
         <h3>{title}</h3>
         <p>{desc}</p>
+        {/* 🧩 Skills / Tools section */}
+        {tools.length > 0 && (
+          <div className="tool-tags">
+            {tools.map((tool, index) => (
+              <span key={index} className="tool-tag">
+                {tool}
+              </span>
+            ))}
+          </div>
+        )}
         <a href={github} className="github-link">
           <FaGithub size={20} />
         </a>
