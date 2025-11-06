@@ -96,6 +96,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
   padding-bottom: 15rem;
 }
 

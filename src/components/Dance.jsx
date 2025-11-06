@@ -6,11 +6,11 @@ import varnam from "../assets/varnam2_thumbnail_1.png";
 import brahmam from "../assets/brahmamokate_thumbnail.jpg";
 import pushpanjali from "../assets/Pushpanjali_2.jpg";
 import shabdham from "../assets/Shabdham_1.png";
-import pushpanjaliAadhi from "../assets/pushpanjaliRaagam.jpg"
-import kumaraSambhavam from "../assets/kumaraSambhavamRaagam.jpg"
-import thillanaHindholam from "../assets/thillanaRaagam.jpg"
-import shriChakraRaaja from "../assets/shriChakraRaaja.jpg"
-import kaavadiChindu from "../assets/kaavadiChindu.jpg"
+import pushpanjaliAadhi from "../assets/pushpanjaliRaagam.jpg";
+import kumaraSambhavam from "../assets/kumaraSambhavamRaagam.jpg";
+import thillanaHindholam from "../assets/thillanaRaagam.jpg";
+import shriChakraRaaja from "../assets/shriChakraRaaja.jpg";
+import kaavadiChindu from "../assets/kaavadiChindu.jpg";
 
 const Dance = () => {
   const projects = [
@@ -23,7 +23,7 @@ const Dance = () => {
     {
       image: brahmam,
       title: "Brahmam Okate",
-      desc: "Presenting a Bharatanatyam rendition of \"Brahmam Okate\", a timeless Keerthana composed by Sri Annamacharya. This dance is to spread awareness about the oneness of all beings, reminding us that everyone and everything was created equal.",
+      desc: 'Presenting a Bharatanatyam rendition of "Brahmam Okate", a timeless Keerthana composed by Sri Annamacharya. This dance is to spread awareness about the oneness of all beings, reminding us that everyone and everything was created equal.',
       youtube: "https://www.youtube.com/watch?v=YRfWTIQgSPU",
     },
     {
@@ -67,7 +67,7 @@ const Dance = () => {
       title: "Kaavadi Chindu",
       desc: "INSERT DESCRIPTION HERE",
       youtube: "",
-    }
+    },
   ];
 
   return (

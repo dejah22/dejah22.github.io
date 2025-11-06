@@ -7,8 +7,8 @@ const papers = [
     id: 1,
     title:
       "Posture Extraction and Deduplication in Jathiswaram Dances via Similarity Filtering",
-    citation: "(Under Review at Elsevier ICMLDE 2025)",
-    authors: `KR Sarath Chandran, <u>Dejah Madhusankar</u>, Krithika Swaminathan (all authors contributed equally)`,
+    citation: "(Under Review @ Elsevier ICMLDE 2025)",
+    authors: `<u>Dejah Madhusankar</u>,  S. Karthika, R. Srinivasan`,
     abstract:
       "We propose a multimodal transformer model that synchronizes visual and textual representations for real-time captioning of short-form videos...",
     link: "https://example.com/paper1.pdf",
@@ -63,6 +63,18 @@ const Research = () => {
           <ResearchPaper key={paper.id} paper={paper} />
         ))}
       </div>
+      <footer
+        style={{
+          textAlign: "right",
+          padding: "4rem 0rem 0rem 1rem",
+          marginBottom: "-30px",
+          fontSize: "0.8rem",
+          color: "#3a2d1fff",
+          opacity: 0.7,
+        }}
+      >
+        © 2025 Dejah Madhusankar. All rights reserved.
+      </footer>
     </div>
   );
 };

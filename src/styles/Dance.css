@@ -1,30 +1,33 @@
 .dance-page {
-  padding: 8rem 2rem 3rem 2rem;
-  /* background-color: #f7bc6e67; */
+  position: relative;
+  padding: clamp(6rem, 10vh, 8rem) clamp(1rem, 3vw, 2rem) 3rem;
   background-color: #ffe1ba55;
   min-height: 100vh;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
+/* Background stays fixed while scrolling */
 .dance-page::before {
   content: "";
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-image: url("../assets/dance-bg.png");
   background-repeat: repeat;
-
-  /* make only the image translucent */
-  opacity: 0.2;
-
-  z-index: 0; /* behind everything */
+  background-size: contain;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
 }
 
+/* HERO */
 .hero-section {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
-  margin-left: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-image {
@@ -37,6 +40,94 @@
   opacity: 0;
 }
 
+/* Grid layout */
+.dance-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(clamp(260px, 28vw, 400px), 1fr)
+  );
+  gap: clamp(1.5rem, 3vw, 3rem);
+  padding-top: 2rem;
+  justify-items: center;
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+/* Card */
+.dance-card {
+  position: relative;
+  background: rgba(255, 248, 242, 0.9);
+  border-radius: 22px;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 5 / 4; /* more landscape */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.dance-card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.dance-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  transition: transform 0.4s ease;
+}
+
+.dance-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Content */
+.dance-card-content {
+  padding: 0.6rem 1rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.dance-card-content h3 {
+  font-size: clamp(1rem, 1vw + 0.8rem, 1.3rem);
+  font-weight: 600;
+  color: #4a3528;
+  margin: 0;
+}
+
+.dance-card-content p {
+  font-size: clamp(0.9rem, 0.8vw + 0.6rem, 1rem);
+  margin: 0.2rem 0 0.4rem 0;
+  color: #7d6c5c;
+}
+
+/* YouTube link icon */
+.youtube-link {
+  position: absolute;
+  bottom: 1rem;
+  right: 0.8rem;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.youtube-link:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Animations */
 @keyframes fadeIn {
   from {
     transform: translateY(20px);
@@ -46,86 +137,6 @@
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-.dance-projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 0.4fr);
-  gap: 2rem;
-  padding-top: 2rem;
-  justify-items: center;
-  animation: fadeUp 1.2s ease forwards;
-  animation-delay: 0.3s;
-}
-
-/* CARD */
-.dance-card {
-  position: relative; /* 🧩 keeps the icon positioned inside */
-  background: #fff8f2;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  width: 100%;
-  max-width: 400px;
-  aspect-ratio: 4 / 3;
-  display: flex;
-  flex-direction: column;
-}
-
-.dance-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-}
-
-/* IMAGE */
-.dance-card img {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  display: block;
-  position: relative;
-  z-index: 1; /* below the icon */
-}
-
-/* ICON */
-.youtube-link {
-  position: absolute;
-  bottom: 2.5rem;
-  right: 0.5rem;
-  z-index: 3; /* ensures it’s above everything */
-  opacity: 0.8;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.youtube-link:hover {
-  transform: scale(1.2);
-  opacity: 1;
-}
-
-/* CONTENT */
-.dance-card-content {
-  padding: 0.3rem 0.3rem 0rem 1rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2; /* above background */
-}
-
-.dance-card-content h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-.dance-card-content p {
-  font-size: 0.95rem;
-  margin: 0;
 }
 
 @keyframes fadeUp {
@@ -139,10 +150,9 @@
   }
 }
 
-/* responsive adjustments */
+/* Responsive adjustments */
 @media (max-width: 900px) {
   .dance-page {
-    margin-left: 0;
     padding: 5rem 1rem;
   }
 
@@ -153,5 +163,6 @@
 
   .dance-projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }

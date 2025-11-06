@@ -6,8 +6,8 @@ import carbonFootprintPic from "../assets/carbonFootprint.png";
 import nmapPic from "../assets/nmap.png";
 import digitalPaperNotesPic from "../assets/digitalPaperNotes.jpg";
 import wordDevilPic from "../assets/wordDevil.png";
-import personalPortfolioPic from "../assets/personalPortfolioPic.jpg"
-import musicAutoSkipperPic from "../assets/musicAutoSkipperPic.png"
+import personalPortfolioPic from "../assets/personalPortfolioPic.jpg";
+import musicAutoSkipperPic from "../assets/musicAutoSkipperPic.png";
 import { CiTextAlignLeft } from "react-icons/ci";
 
 const Projects = () => {
@@ -47,7 +47,8 @@ const Projects = () => {
       title: "Live Pose Estimation and Feedback for Bharatanatyam Dance Poses",
       desc: "This project uses computer vision and AI-based similarity scoring to evaluate Bharatanatyam dance postures in real-time. By normalizing human body landmarks, the system provides pose-invariant comparisons and dynamic feedback to learners and practioners. Switch on your webcam and strike a pose!. Tech used: Python, MediaPipe, OpenCV, Numpy, TensorFlow.",
       img: wordDevilPic,
-      github: "https://github.com/dejah22/live-pose-estimation-feedback-for-dance-poses",
+      github:
+        "https://github.com/dejah22/live-pose-estimation-feedback-for-dance-poses",
     },
     {
       title: "Personal Portfolio",
@@ -60,7 +61,7 @@ const Projects = () => {
       desc: "Music Auto Skipper is an Android app that automatically skips songs on YouTube Music or Spotify after a specified percentage of playback.",
       img: musicAutoSkipperPic,
       github: "https://github.com/dejah22/dejah22.github.io",
-    }
+    },
   ];
 
   return (
@@ -89,6 +90,17 @@ const Projects = () => {
           ))}
         </div>
       </motion.div>
+      <footer
+        style={{
+          textAlign: "right",
+          padding: "1rem 1rem",
+          fontSize: "0.8rem",
+          color: "#3a2d1fff",
+          opacity: 0.7,
+        }}
+      >
+        © 2025 Dejah Madhusankar. All rights reserved.
+      </footer>
     </div>
   );
 };
