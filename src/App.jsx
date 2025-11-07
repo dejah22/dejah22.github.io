@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="app-layout">
         <Sidebar />
         <div className="main-content">
@@ -26,7 +26,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
