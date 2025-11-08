@@ -9,6 +9,9 @@ import wordDevilPic from "../assets/wordDevil.png";
 import personalPortfolioPic from "../assets/personalPortfolioPic.jpg";
 import musicAutoSkipperPic from "../assets/musicAutoSkipperPic.png";
 import skeleton from "../assets/skeleton.jpeg";
+import videoCaptionProjPic from "../assets/VideoCaptionProjPic.jpg";
+import emotionProjPic from "../assets/EmotionProjPic.jpg";
+
 
 const Projects = () => {
   const projects = [
@@ -63,13 +66,26 @@ const Projects = () => {
       github: "https://github.com/dejah22/dejah22.github.io",
       tools: ["React", "Vite", "HTML/CSS", "JavaScript"],
     },
-
     {
-      title: "Digital Paper-pad with Interactive Writing and Sounds",
+      title: "Digital Paper Notes",
       desc: "As users type, text is rendered as animated strokes with synchronized pencil scratch audio that creates the illusion of writing on a notebook",
       img: digitalPaperNotesPic,
       github: "https://github.com/dejah22/digital_paper_notes",
       tools: ["JavaScript", "React", "Howler"],
+    },
+    {
+      title: "Video Descriptor",
+      desc: "Describes videos using pre-trained deep learning models to generate captions for each frame and combines them into a coherent summary",
+      img: videoCaptionProjPic,
+      github: "https://github.com/dejah22/Video-Descriptor",
+      tools: ["Deep learning", "Python", "Video Processing"],
+    },
+    {
+      title: "EmotiNet",
+      desc: "EmotiNet is a full-stack machine learning system that autonomously generates structured, emotion-labeled datasets from live facial video input.",
+      img: emotionProjPic,
+      github: "https://github.com/dejah22/EmotiNet",
+      tools: ["Python", "Flask", "OpenCv","TensorFlow",],
     },
   ];
 
