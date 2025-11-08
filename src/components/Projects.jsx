@@ -10,17 +10,16 @@ import personalPortfolioPic from "../assets/personalPortfolioPic.jpg";
 import musicAutoSkipperPic from "../assets/musicAutoSkipperPic.png";
 import skeleton from "../assets/skeleton.jpeg";
 import videoCaptionProjPic from "../assets/VideoCaptionProjPic.jpg";
-import emotionProjPic from "../assets/EmotionProjPic.jpg";
-
+import emotionProjPic from "../assets/EmotionProjPic.jpeg";
 
 const Projects = () => {
   const projects = [
     {
       title: "NetMapper",
-      desc: "A from-scratch Nmap clone that simulates popular Network Protocols and Attacks",
+      desc: "A from-scratch Nmap clone that performs popular Network Protocols and Attacks",
       img: nmapPic,
       github: "https://github.com/dejah22/NetMapper",
-      tools: ["C/C++", "Socket Programming"],
+      tools: ["C/C++", "Socket Programming, UNIX Scripting"],
     },
     {
       title: "PosePerfect",
@@ -31,11 +30,31 @@ const Projects = () => {
       tools: ["Python", "OpenCV", "TensorFlow", "Mediapipe", "NumPy"],
     },
     {
+      title: "Video Descriptor",
+      desc: `Streamlit app that deploys the DL architecture (<a href="../#/research">paper</a>) to generate captions for user-uploaded videos.`,
+      img: videoCaptionProjPic,
+      github: "https://github.com/dejah22/Video-Descriptor",
+      tools: ["Python", "OpenCV", "Streamlit", "TensorFlow", "Deep learning"],
+    },
+    {
+      title: "EmotiNet - Affective Dataset Generation & Annotation",
+      desc: "Full-stack ML system that autonomously generates structured, emotion-labeled datasets from live facial video input.",
+      img: emotionProjPic,
+      github: "https://github.com/dejah22/EmotiNet",
+      tools: ["Python", "Flask", "OpenCv", "TensorFlow"],
+    },
+    {
       title: "Carbon Footprint Tracker",
       desc: "End-to-end app that calculates and tracks your carbon footprint, with the aim of fostering a greener planet",
       img: carbonFootprintPic,
       github: "https://github.com/dejah22/Carbon-Footprint-Tracker",
-      tools: ["Java", "Tomcat JDBC Servlets", "MySQL", "HTML/CSS"],
+      tools: [
+        "Java",
+        "Tomcat JDBC Servlets",
+        "MySQL",
+        "HTML/CSS",
+        "JavaScript",
+      ],
     },
     {
       title: "Automatic Music Skipper",
@@ -50,7 +69,7 @@ const Projects = () => {
       desc: "Minimalistic Note-Making app to pin up your quick notes, similar to Google Keep",
       img: noteAppPic,
       github: "https://github.com/dejah22/Pretty_Notes-FE",
-      tools: ["React", "Java SpringBoot", "PostgreSQL"],
+      tools: ["React", "Java SpringBoot", "PostgreSQL", "Docker", "Typescript"],
     },
     {
       title: "Word devil",
@@ -72,20 +91,6 @@ const Projects = () => {
       img: digitalPaperNotesPic,
       github: "https://github.com/dejah22/digital_paper_notes",
       tools: ["JavaScript", "React", "Howler"],
-    },
-    {
-      title: "Video Descriptor",
-      desc: "Describes videos using pre-trained deep learning models to generate captions for each frame and combines them into a coherent summary",
-      img: videoCaptionProjPic,
-      github: "https://github.com/dejah22/Video-Descriptor",
-      tools: ["Deep learning", "Python", "Video Processing"],
-    },
-    {
-      title: "EmotiNet",
-      desc: "EmotiNet is a full-stack machine learning system that autonomously generates structured, emotion-labeled datasets from live facial video input.",
-      img: emotionProjPic,
-      github: "https://github.com/dejah22/EmotiNet",
-      tools: ["Python", "Flask", "OpenCv","TensorFlow",],
     },
   ];
 

@@ -113,7 +113,7 @@ a:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: auto;
+  margin-top: 0rem;
   padding-bottom: 0.5rem;
 }
 
@@ -122,7 +122,7 @@ a:focus-visible {
   border: 1px solid rgba(180, 140, 90, 0.25);
   color: #4b3a2a;
   font-size: 0.75rem;
-  padding: 0.25rem 0.6rem;
+  padding: 0.01rem 0.6rem;
   border-radius: 10px;
   backdrop-filter: blur(4px);
   transition: 0.25s ease, transform 0.25s ease;
