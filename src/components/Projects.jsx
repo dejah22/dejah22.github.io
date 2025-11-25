@@ -6,7 +6,7 @@ import carbonFootprintPic from "../assets/carbonFootprint.jpg";
 import nmapPic from "../assets/nmap.png";
 import digitalPaperNotesPic from "../assets/digitalPaperNotes.jpg";
 import wordDevilPic from "../assets/wordDevil.png";
-import personalPortfolioPic from "../assets/personalPortfolioPic.jpg";
+import personalPortfolioPic from "../assets/portfolio.png";
 import musicAutoSkipperPic from "../assets/musicAutoSkipperPic.png";
 import skeleton from "../assets/skeleton.jpeg";
 import videoCaptionProjPic from "../assets/VideoCaptionProjPic.jpg";
@@ -19,7 +19,7 @@ const Projects = () => {
       desc: "A from-scratch Nmap clone that performs popular Network Protocols and Attacks",
       img: nmapPic,
       github: "https://github.com/dejah22/NetMapper",
-      tools: ["C/C++", "Socket Programming, UNIX Scripting"],
+      tools: ["C/C++", "Socket Programming", "UNIX Scripting"],
     },
     {
       title: "PosePerfect",

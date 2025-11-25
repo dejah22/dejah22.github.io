@@ -21,7 +21,7 @@ const Home = () => {
           style={{
             fontFamily: "Sacramento",
             fontSize: 80,
-            opacity: 0.85,
+            opacity: 0.95,
             marginBottom: -10,
           }}
         >

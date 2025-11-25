@@ -1,5 +1,8 @@
 .research-page {
-  padding: 8rem 3rem 3rem 5rem;
+  /* padding: 8rem 3rem 3rem 5rem; */
+  padding: clamp(5rem, 6vw, 8rem) clamp(1rem, 4vw, 3rem) clamp(2rem, 3vw, 3rem)
+    clamp(2rem, 5vw, 5rem);
+
   background-color: #fffaf4;
   min-height: 100vh;
   color: #402f23;
@@ -16,7 +19,7 @@
 .research-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: clamp(1rem, 1vw, 3rem);
 }
 
 .research-card {
@@ -44,8 +47,8 @@
 }
 
 .authors {
-  font-size: 0.95rem;
-  color: #746a5e;
+  font-size: 0.98rem;
+  color: #433e37;
   margin: -0.5rem 0 1rem 0;
 }
 
@@ -60,12 +63,15 @@
   border: 2px solid #8b6b4f; /* warm brown */
   color: #3d2b1f;
   padding: 0.5rem 1.2rem;
+  padding: clamp(0.35rem, 0.5vw + 0.2rem, 0.55rem) clamp(0.9rem, 1.5vw, 1.4rem);
   border-radius: 10px;
   cursor: pointer;
   font-weight: 500;
+  font-size: clamp(0.6rem, 1vw + 0.4rem, 0.85rem);
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
   text-decoration: none;
+  white-space: nowrap; /* clean buttons on mobile */
 }
 
 .btn-abstract:hover,
@@ -83,10 +89,50 @@
   padding: 0;
   opacity: 0;
   color: #4e3a28;
+  font-size: clamp(0.85rem, 0.7vw + 0.5rem, 1rem);
 }
 
 .abstract-drawer.open {
   max-height: 500px;
   padding: 1rem 0 0 0;
   opacity: 1;
+}
+
+/* === MOBILE FRIENDLINESS === */
+@media (max-width: 700px) {
+  .research-page {
+    padding: 6rem 1.2rem 3rem 1.2rem;
+  }
+
+  .button-group {
+    flex-direction: row;
+    gap: clamp(0.6rem, 1.5vw, 1rem);
+  }
+  .abstract-drawer.open {
+    max-height: 500px;
+    padding: clamp(0.5rem, 1vw, 1rem) 0 0 0;
+    font-size: clamp(0.7rem, 0.7vw + 0.4rem, 0.8rem);
+
+    opacity: 1;
+  }
+
+  .btn-abstract,
+  .btn-paper {
+    padding: clamp(0.35rem, 0.5vw + 0.2rem, 0.55rem)
+      clamp(0.9rem, 1.5vw, 1.4rem);
+  }
+  .authors {
+    font-size: clamp(0.7rem, 0.7vw + 0.4rem, 0.8rem);
+  }
+  .paper-title {
+    font-size: clamp(0.8rem, 1vw + 0.7rem, 0.5rem);
+  }
+  .research-card {
+    padding: clamp(1rem, 2vw, 2rem);
+  }
+  .research-title {
+    font-size: clamp(1.2rem, 2.5vw + 0.5rem, 2.4rem);
+    margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+    margin-top: clamp(1.2rem, 2vw, 2rem);
+  }
 }

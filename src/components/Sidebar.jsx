@@ -22,7 +22,7 @@ const Sidebar = () => {
         </div>
         <p className="name">Dejah Madhusankar</p>
         <p className="bio">
-          • Student Researcher • Engineer • Dancer <br />
+          • Engineer • Dancer <br />
           Exploring the intersection of AI, dance, and emotion.
         </p>
       </div>

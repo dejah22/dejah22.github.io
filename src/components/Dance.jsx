@@ -11,27 +11,36 @@ import kumaraSambhavam from "../assets/kumaraSambhavamRaagam.jpg";
 import thillanaHindholam from "../assets/thillanaRaagam.jpg";
 import shriChakraRaaja from "../assets/shriChakraRaaja.jpg";
 import kaavadiChindu from "../assets/kaavadiChindu.jpg";
+import maadumeikumkanne from "../assets/maaduMeikum.jpg";
+import { image } from "framer-motion/client";
 
 const Dance = () => {
   const projects = [
     {
       image: varnam,
       title: "Varnam",
-      desc: "Snippet from a 45-minute narrative dance of a maiden waiting for her long-gone lover.",
+      desc: "Snippet from a 45-minute narrative dance of a maiden reminiscing and waiting for her long-gone lover.",
       youtube: "https://www.youtube.com/watch?v=8iPHOOw55nA",
+    },
+    {
+      image: maadumeikumkanne,
+      title: "Maadu Meikum Kanne",
+      desc: "A playful dialogue between a mother and her charming but naughty son, Krishna (dual-role)!",
+      youtube: "https://www.youtube.com/watch?v=Cus-P2GeDUM",
     },
     {
       image: brahmam,
       title: "Brahmam Okate",
-      desc: "A dance to remind us that everyone and everything was created equal.",
+      desc: "To remind us that everyone and everything was created equal.",
       youtube: "https://www.youtube.com/watch?v=YRfWTIQgSPU",
     },
     {
       image: pushpanjali,
       title: "Pushpanjali",
-      desc: "A salutory dance to the Gods, the musicians the teachers and the audience.",
+      desc: "Salutory dance to the Gods, the musicians the teachers and the audience.",
       youtube: "https://www.youtube.com/watch?v=XjJhiG36XTI",
     },
+
     {
       image: shabdham,
       title: "Venuganane Shabdham",
@@ -40,7 +49,7 @@ const Dance = () => {
     },
     {
       image: pushpanjaliAadhi,
-      title: "Pushpanjali Gambheera Naattai",
+      title: "Pushpanjali Aadhi",
       desc: "A salutory dance by offering flowers to the Gods, the musicians and the audience",
       youtube: "https://www.youtube.com/shorts/3QOZOLSasOo",
     },
@@ -63,7 +72,7 @@ const Dance = () => {
     {
       image: kaavadiChindu,
       title: "Kaavadi Chindu",
-      desc: "A lively folk dance",
+      desc: "A lively and traditional folk-style dance dedicated to Lord Murugan",
       youtube: "https://www.youtube.com/shorts/TOiED_28BHY",
     },
   ];

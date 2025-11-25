@@ -86,8 +86,15 @@
 }
 
 .name {
-  padding: 50px 10px 10px 10px;
-  font-size: larger;
+  padding: 50px 10px 1px 10px;
+  font-size: 150%;
+  line-height: 0%;
+  color: rgb(37, 23, 16);
+}
+.bio {
+  color: rgb(37, 23, 16);
+  font-size: large;
+  padding-top: 10%;
 }
 
 .contact-section {
@@ -115,7 +122,8 @@
 
 /* responsive sidebar toggle */
 @media (max-width: 900px) {
-  .sidebar {
+  .sidebar,
+  .sidebar-dance {
     display: none;
   }
 }
