@@ -29,19 +29,19 @@ const Sidebar = () => {
 
       <div className="contact-section">
         <a href="https://github.com/dejah22">
-          <FaGithub />
+          <FaGithub size={25} />
         </a>
         <a href="https://scholar.google.com/citations?user=10rvNFUAAAAJ&hl=en&oi=ao">
-          <FaGoogleScholar size={20} />
+          <FaGoogleScholar size={25} />
         </a>
         <a href="https://www.linkedin.com/in/dejah-madhusankar/">
-          <FaLinkedin />
+          <FaLinkedin size={25} />
         </a>
         <a href="mailto:dejah9465@gmail.com">
-          <FaEnvelope />
+          <FaEnvelope size={25} />
         </a>
         <a href="https://www.youtube.com/@ThaalamIndia">
-          <FaYoutube size={20} />
+          <FaYoutube size={25} />
         </a>
       </div>
       <footer

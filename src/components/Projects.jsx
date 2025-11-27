@@ -16,10 +16,10 @@ const Projects = () => {
   const projects = [
     {
       title: "NetMapper",
-      desc: "A from-scratch Nmap clone that performs popular Network Protocols and Attacks",
+      desc: "A from-scratch Nmap clone that simulates popular Network Protocols and performs active and passive attacks. Use it at your own risk!",
       img: nmapPic,
       github: "https://github.com/dejah22/NetMapper",
-      tools: ["C/C++", "Socket Programming", "UNIX Scripting"],
+      tools: ["C/C++", "Socket Programming", "OS/Networks", "UNIX Scripting"],
     },
     {
       title: "PosePerfect",
@@ -31,7 +31,7 @@ const Projects = () => {
     },
     {
       title: "Video Descriptor",
-      desc: `Streamlit app that deploys the DL architecture (<a href="../#/research">paper</a>) to generate captions for user-uploaded videos.`,
+      desc: `Streamlit app that deploys the DL architecture (from my <a href="../#/research">paper</a>) to generate captions for user-uploaded videos.`,
       img: videoCaptionProjPic,
       github: "https://github.com/dejah22/Video-Descriptor",
       tools: ["Python", "OpenCV", "Streamlit", "TensorFlow", "Deep learning"],
@@ -80,7 +80,7 @@ const Projects = () => {
     },
     {
       title: "Personal Portfolio",
-      desc: "My personal portfolio website",
+      desc: "My personal portfolio website that I am constantly updating (you're on it right now!)",
       img: personalPortfolioPic,
       github: "https://github.com/dejah22/dejah22.github.io",
       tools: ["React", "Vite", "HTML/CSS", "JavaScript"],
@@ -107,6 +107,19 @@ const Projects = () => {
       >
         Personal Projects
       </h1>
+      <p
+        style={{
+          padding: "0rem 3rem 0rem 5rem",
+          fontSize: "clamp(1rem, 0.7vw + 0.4rem, 5rem)",
+        }}
+      >
+        These are some of the personal projects I managed to save, over the
+        years. As an anti-Github, pre-AI-era coder, while I did lose much of my
+        early and side projects, I did learn to build them purely through
+        textbooks and after-class library sessions! That's right!
+        <i> Textbooks.</i> Old-school much? Click on the github icon to view the
+        complete READMEs and contribute to my codebase!
+      </p>
       <motion.div
         className="page-container"
         style={{ padding: "0rem 5rem 0rem 3rem" }}

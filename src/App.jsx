@@ -8,6 +8,7 @@ import Research from "./components/Research";
 import Dance from "./components/Dance";
 // import Blog from "./components/Blog";
 import "./App.css";
+import WorkExperience from "./components/WorkExperience";
 
 function App() {
   return (
@@ -18,10 +19,10 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/work-experience" element={<WorkExperience />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/research" element={<Research />} />
             <Route path="/dance" element={<Dance />} />
-            {/* <Route path="/blog" element={<Blog />} /> */}
             {/* <Route path="/certifications" element={<div>Certifications</div>} /> */}
           </Routes>
         </div>

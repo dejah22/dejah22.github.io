@@ -39,7 +39,6 @@ const ProjectCard = ({ title, desc, img, github, tools }) => {
         <p dangerouslySetInnerHTML={{ __html: desc }} />
         {/* {desc}</p> */}
 
-        {/* 🧩 Skills / Tools section */}
         {tools.length > 0 && (
           <div className="tool-tags">
             {tools.map((tool, index) => (
@@ -50,7 +49,7 @@ const ProjectCard = ({ title, desc, img, github, tools }) => {
           </div>
         )}
         <a href={github} className="github-link">
-          <FaGithub size={20} />
+          <FaGithub size={30} />
         </a>
       </div>
     </motion.div>

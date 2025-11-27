@@ -7,10 +7,10 @@ export default function Navbar() {
   const isDancePage = location.pathname.includes("/dance");
 
   const tabs = [
+    { name: "Experience", path: "/work-experience" },
     { name: "Research", path: "/research" },
     { name: "Projects", path: "/projects" },
     { name: "Dance", path: "/dance" },
-    // { name: "Blog", path: "/blog" },
     // { name: "Certifications", path: "/certifications" },
   ];
 

@@ -80,7 +80,21 @@ const Dance = () => {
   return (
     <div className="dance-page">
       <div className="hero-section">
-        <img src={danceCover} alt="Dance Hero" className="hero-image" />
+        <div className="hero-left">
+          <img src={danceCover} alt="Dance Hero" className="hero-image" />
+        </div>
+
+        <div className="hero-right">
+          <h1 className="dance-heading">Dance Performances</h1>
+          <p className="dance-description">
+            I joined my first dance class at the age of 3, and all I could think
+            of was how strict my instructor was. Over the two decades since
+            then, I've learnt, lost, and grown through this art in ways I can't
+            possibly express. While words fall short, I hope you get to see some
+            of my performances! I've over 1000 videos but the clarity is
+            abominable, so here's a few that survived!
+          </p>
+        </div>
       </div>
 
       <div className="dance-projects-grid">

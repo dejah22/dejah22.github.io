@@ -1,6 +1,8 @@
 import React from "react";
 import ResearchPaper from "./ResearchPaper";
 import "../styles/Research.css";
+import "../styles/ExperienceCard.css";
+import ExperienceCard from "../components/ExperienceCard";
 
 const papers = [
   {
@@ -57,28 +59,94 @@ const papers = [
   },
 ];
 
+const exp = [
+  {
+    role: "Editor-in-Chief",
+    company: "Sagent Lending Technologies - Critical Payments & Escrow",
+    period: "July 2024 — Present",
+    bullets: [
+      "Designing and developing production-facing applications for L1/L2 operations and SRE.",
+      "Real-time ROI platform and enterprise-grade SRE tooling.",
+      "Gamified approach to ensure apps are production-ready.",
+      "End-to-end ownership from system design to UI implementation.",
+      "Optimised backend APIs processing 10⁶+ entries/minute.",
+    ],
+    section: "Recognition",
+    achievements: [
+      "Best Technical Hire of 2024 (India) for performance in Q3 2024.",
+    ],
+    tags: ["Angular", "React", "NestJS", "TypeScript", "Splunk"],
+  },
+  {
+    role: "Software Development Intern",
+    company: "Sagent Lending Technologies - Foreclosure Unit",
+    period: "June 2023 — Aug 2023",
+    bullets: [
+      "Built Angular library for dynamic forms.",
+      "Reduced code by 80% with reusable architecture.",
+      "96% test coverage with Jest.",
+      "Saved 75% dev time via automation.",
+    ],
+    tags: ["Angular", "Jest", "TypeScript"],
+  },
+  {
+    role: "Application Development Intern",
+    company: "Rocketlane",
+    period: "Oct 2023 — July 2024",
+    bullets: [
+      "Led cloud initiatives and workshops.",
+      "Mentored peers in cloud-native tools.",
+    ],
+    tags: ["GCP", "Docker", "Kubernetes"],
+  },
+];
+
 const Research = () => {
   return (
-    <div className="research-page">
-      <h1 className="research-title">Research</h1>
-      <div className="research-list">
-        {papers.map((paper) => (
-          <ResearchPaper key={paper.id} paper={paper} />
-        ))}
+    <>
+      <div className="research-page">
+        <h1 className="research-title">Research (Papers) </h1>
+        <p
+          style={{
+            padding: "0rem 3rem 2rem 1.5rem",
+            fontSize: "clamp(1rem, 0.7vw + 0.4rem, 5rem)",
+          }}
+        >
+          My work ranges ranges from NLP methodologies, deep vision
+          architectures to transformer-based human-pose estimators. Currently
+          I'm combining these experiences to study generative dance models at
+          the intersection of ML, affective computing and performative arts.
+          Here are some of my published and ongoing research papers, followed by
+          my lab experiences.
+        </p>
+        <div className="research-list">
+          {papers.map((paper) => (
+            <ResearchPaper key={paper.id} paper={paper} />
+          ))}
+        </div>
       </div>
-      <footer
-        style={{
-          textAlign: "right",
-          padding: "4rem 0rem 0rem 1rem",
-          marginBottom: "-30px",
-          fontSize: "0.8rem",
-          color: "#3a2d1fff",
-          opacity: 0.7,
-        }}
-      >
-        © 2025 Dejah Madhusankar. All rights reserved.
-      </footer>
-    </div>
+      <div className="experience-page" style={{ padding: "0rem 4rem" }}>
+        <h1 className="exp-title">Assistantships</h1>
+
+        <div className="timeline">
+          {exp.map((exp, i) => (
+            <ExperienceCard key={i} {...exp} showLine={false} showDot={true} />
+          ))}
+        </div>
+        <footer
+          style={{
+            textAlign: "right",
+            padding: "4rem 0rem 0rem 1rem",
+            marginBottom: "-30px",
+            fontSize: "0.8rem",
+            color: "#3a2d1fff",
+            opacity: 0.7,
+          }}
+        >
+          © 2025 Dejah Madhusankar. All rights reserved.
+        </footer>
+      </div>
+    </>
   );
 };
 

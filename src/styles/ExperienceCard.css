@@ -1,0 +1,94 @@
+.experience-page {
+  padding: 6rem 2rem;
+}
+
+.exp-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+  border-left: 4px solid #8b5e34;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 5rem; /* space for timeline */
+  margin: 1rem;
+}
+
+.dot {
+  position: absolute;
+  left: 1.7rem;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background: #8b5e34;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+/* The connecting line — starts below the dot */
+.vertical-line {
+  position: absolute;
+  left: 2rem; /* perfectly centered with dot */
+  top: calc(
+    9.2rem + 12px
+  ); /* dot top + dot height → line begins UNDER the dot */
+  width: 3px;
+  height: calc(100% + 2rem); /* stops before next dot */
+  background: #c8a98b;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.card {
+  background: #fff9f3;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid #ecd8c8;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.period {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.company {
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+.card-header h3,
+.sub-title {
+  margin: 0;
+}
+
+.bullets {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  border: 1px solid #d9c0ab;
+  font-size: 0.8rem;
+}
