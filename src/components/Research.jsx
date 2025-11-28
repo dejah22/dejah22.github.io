@@ -61,44 +61,27 @@ const papers = [
 
 const exp = [
   {
-    role: "Editor-in-Chief",
-    company: "Sagent Lending Technologies - Critical Payments & Escrow",
-    period: "July 2024 — Present",
+    role: "Summer Research Intern",
+    company: "Crypto Lab, Indian Institute of Technology (IIT) Kharagpur, India",
+    period: "Jun 2023- Aug 2023",
     bullets: [
-      "Designing and developing production-facing applications for L1/L2 operations and SRE.",
-      "Real-time ROI platform and enterprise-grade SRE tooling.",
-      "Gamified approach to ensure apps are production-ready.",
-      "End-to-end ownership from system design to UI implementation.",
-      "Optimised backend APIs processing 10⁶+ entries/minute.",
+      "Advisor: Dr. Indranil Sengupta.",
+      "Built a network scanning tool (similar to Nmap) with C/C++ using Socket Programming.",
+      "Explored extension of SVD-based cepstral-domain watermarking (from audio) to 3D-DCT/SVD domains of video sequences."
     ],
-    section: "Recognition",
-    achievements: [
-      "Best Technical Hire of 2024 (India) for performance in Q3 2024.",
-    ],
-    tags: ["Angular", "React", "NestJS", "TypeScript", "Splunk"],
+    tags: ["Socket Programming","C/C++","Computer Networks"],
   },
   {
-    role: "Software Development Intern",
-    company: "Sagent Lending Technologies - Foreclosure Unit",
-    period: "June 2023 — Aug 2023",
+    role: "ML Research Assistant",
+    company: "SSN College of Engineering",
+    period: "Aug 2022 - Jan 2023",
     bullets: [
-      "Built Angular library for dynamic forms.",
-      "Reduced code by 80% with reusable architecture.",
-      "96% test coverage with Jest.",
-      "Saved 75% dev time via automation.",
+      "Advisor: Dr. Bharathi.",
+      "Developed and optimized ML and DL algorithms for various ongoing projects in NLP and Image Processing.",
+      "Provided comprehensive coding support and identified research gaps through literature surveys.",
     ],
-    tags: ["Angular", "Jest", "TypeScript"],
-  },
-  {
-    role: "Application Development Intern",
-    company: "Rocketlane",
-    period: "Oct 2023 — July 2024",
-    bullets: [
-      "Led cloud initiatives and workshops.",
-      "Mentored peers in cloud-native tools.",
-    ],
-    tags: ["GCP", "Docker", "Kubernetes"],
-  },
+    tags: ["Deep Learning", "Python","Natural Language Processing","Machine Learning"],
+  }
 ];
 
 const Research = () => {
