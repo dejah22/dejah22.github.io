@@ -1,77 +1,137 @@
 import React from "react";
 import "../styles/ExperienceCard.css";
 import ExperienceCard from "../components/ExperienceCard";
+import { sub } from "framer-motion/client";
 
 const jobexperiences = [
   {
     role: "Software Development Engineer",
-    company: "Sagent Lending Technologies - Critical Payments & Escrow",
+    company:
+      "Sagent Lending Technologies - Dara, Critical Payments & Escrow Management",
     period: "Jul 2024 — Present",
     bullets: [
-      // "Designing and developing production-facing applications for L1/L2 operations and SRE.",
-      // "Real-time ROI platform and enterprise-grade SRE tooling.",
-      // "Gamified approach to ensure apps are production-ready.",
-      // "End-to-end ownership from system design to UI implementation.",
-      // "Optimised backend APIs processing 10⁶+ entries/minute.",
-      "Built full-stack payment infrastructures as part of Critical Payments and Escrow Management division.",
-      "Scaled to support near real-time processing for a portfolio of 2M+ active loans.",
-      "Re-engineering COBOL mainframe workflows to event-driven Java microservices.",
-      "Trained 3 new interns for 6 months."
+      "Selected as part of the top 1% developers for their flagship cross-country team, Dara.",
+      {
+        text: "Building full-stack reliability-sensitive infrastructures as part of the Critical Payments and Escrow Management team.",
+        sub: [
+          "Implementing API services in Java Springboot and event-driven pipelines with Kafka, to handle high-throughput, automated payments.",
+          "Developing user-friendly React UI features and integrating them with backend services",
+        ],
+      },
+      "Collaborated with global banking clients to deliver and scale payment engines for high-volume portfolios.",
+      "Scaled to support near real-time processing for a portfolio of 2M+ active loans, exceeding performance and reliability targets.",
+      "Modernizing legacy pipelines by re-engineering COBOL mainframe workflows to event-driven Java microservices.",
+      "Mentored and trained 3 new interns for 6 months.",
+      "Actively contributed to hiring drives by serving on technical interview panels.",
+      "Delivered monthly engineering seminars on emerging technologies and modern problem-solving approaches.",
     ],
     section: "Recognition",
     achievements: [
-      "Best Technical Hire of 2024 (India) for performance in Q3 2024.",
+      "Best Technical Hire of 2024 (India) for performance in Q2-Q4, 2024.",
     ],
-    tags: ["Angular", "React", "NestJS", "TypeScript", "Splunk"],
+    tags: [
+      "React",
+      "Java",
+      "API Programming",
+      "Kafka",
+      "GraphQL",
+      "PostgreSQL",
+      "Kubernetes",
+      "TypeScript",
+      "Docker",
+      "Git",
+    ],
   },
   {
     role: "Software Development Intern",
-    company: "Sagent Lending Technologies - Foreclosure Unit",
+    company: "Sagent Lending Technologies",
     period: "Jan 2024 — Jun 2024",
     bullets: [
-      "Built Angular library for dynamic forms.",
-      "Reduced code by 80% with reusable architecture.",
-      "96% test coverage with Jest.",
-      "Saved 75% dev time via automation.",
+      {
+        text: "Developed multiple web-based full-stack features across 3 internal projects:",
+        sub: [
+          "Extensively worked on building user-friendly React UI features and integrating them with backend services.",
+          "Created APIs using Springboot and TypeORM to handle business logic and data management.",
+          "Worked on optimizing database queries and improving overall application performance.",
+        ],
+      },
+      "Independently analyzed, proposed, and led a container-slimming and load-optimization strategy to reduce Kubernetes deployment bottlenecks by ~35% across platforms. This effort earned me ownership of the subsequent workflow, company-wide recognition as the top performer among 22 interns, and a full-time offer.",
+      "Automated the GraphQL → TypeORM type-generation process, and accelerated release cycles by 25% (measured by the managerial unit).",
+      "Served as a local outreach deputy, supporting community and organizational initiatives.",
     ],
-    tags: ["Angular", "Jest", "TypeScript"],
+    tags: ["C/C++", "React", "Java", "TypeScript", "Jest"],
   },
   {
     role: "Software Development Intern",
     company: "Rocketlane",
     period: "Jun 2023 — Aug 2023",
     bullets: [
-      "Contributed to the development of an LLM-based AI assistant to analyze post-meeting transcripts for improved sales"
+      {
+        text: "Contributed to the development of an LLM-based AI assistant to analyze post-meeting transcripts for improved sales.",
+        sub: [
+          "Built custom transcript-cleaning modules to turn raw call data into structured inputs.",
+          "Integrated OpenAI APIs to deliver high-quality summaries, Q&A responses, analytical insights, and auto-generated action items.",
+        ],
+      },
+      "Built multiple React UI features for their flagship product, Rocketlane.",
+      "Developed a new log-analysis module for faster insights into system issues.",
+      "Took initiative to refactor the internal dashboard - cutting code size by 40% and reducing page load time. This earned a mention in the monthly org review for improving developer productivity.",
     ],
-    tags: ["Springboot", "Docker", "Kubernetes"],
+    tags: [
+      "React",
+      "Python",
+      "Docker",
+      "JavaScript",
+      "HTML/CSS",
+      "OpenAI APIs",
+    ],
   },
 ];
-/* Undergraduate */ 
+/* Undergraduate */
 const clubs = [
   {
-    role: "Editor-in-Chief",
+    role: "Editor-in-Chief, SSNCE's Technical Editorital Teams",
     company: "SSN College of Engineering",
     period: "Sept 2020 — May 2024",
     bullets: [
-      "TechVibe, SSNCE's Annual TechFest Newsletter. (2023)",
-      "Vibrations SSNCE. (2020-2021)",
-      "Covered emerging CS research, industry trends, and student hackathons, reaching 3000+ students and faculty.",
-      "Led a 15-member team.",
+      {
+        text: "TechVibe, INVENTE (2022-2024)- Annual Techfest Newsletter of Dept. of Computer Science & Engineering, SSNCE",
+        sub: [
+          "Promoted for outstanding contributions as Deputy Head (2022) to Head (2023-2024).",
+          "Covered emerging CS research, industry trends, and student hackathons, reaching 3000+ students and faculty.",
+          "Led a 20-member team.",
+        ],
+      },
+      {
+        text: "Vibrations (2020-2021) - Quarterly Newsletter of the Dept. of Sciences and Humanities, SSNCE",
+        sub: [
+          "Promoted for outstanding contributions as Secretary (2020) to Head (2021).",
+          "Led design, article review & management of Vibrations, SSNCE's Humanities Deparment's newsletter.",
+          "Led a 15-member team.",
+        ],
+      },
+      {
+        text: "Vibrations (2020-2021) - Quarterly Newsletter of the Dept. of Sciences and Humanities, SSNCE",
+        sub: [
+          "Promoted for outstanding contributions as Secretary (2020) to Head (2021).",
+          "Led design, article review & management of Vibrations, SSNCE's Humanities Deparment's newsletter.",
+          "Led a 15-member team.",
+        ],
+      },
     ],
     section: "Recognition",
     achievements: [
       "Promoted from Deputy Head (2022) to Head (2023) of Tech Editorial Committee.",
     ],
-    tags: ["Leadership", "Editing", "Team Management"],
+    tags: ["Leadership", "Content editing", "Team Management"],
   },
   {
     role: "ML Deputy Head (Coding Club)",
     company: "SSN College of Engineering",
     period: "May 2022 — May 2024",
     bullets: [
-      "Organized workshops on ML topics like Natural language processing and Computer Vision.",
-      "Conducted coding competitions and hackathons to foster practical skills among students.",
-      "Mentored juniors in ML projects and research."
+      "Co-conducted workshops on NLP, Computer Vision, and ML fundamentals.",
+      "Mentored juniors in ML projects and Kaggle competitions.",
     ],
     tags: ["Machine Learning", "Python", "Leadership", "Workshops", "Events"],
   },
@@ -80,26 +140,13 @@ const clubs = [
     company: "SSN College of Engineering",
     period: "May 2021 — Jun 2022",
     bullets: [
-      "Led the Fine Arts Club, organizing events and workshops to promote artistic talents among students.",
-      "Coordinated annual cultural fest activities, managing a team of 20 members.",
-      "Facilitated collaborations with other college clubs for interdisciplinary events."
+      "Co-organized campus-wide dance events and competitions.",
+      "Coordinated annual cultural fest activities with a 20-member team",
+      "Collaborated with other clubs for cultural-fests and community events.",
     ],
-    tags: ["Event Management","Cultural Activities","Leadership"],
+    tags: ["Event Management", "Cultural Activities", "Dance", "Leadership"],
   },
-  {
-    role: "SSN-ACM Member",
-    company: "SSN College of Engineering",
-    period: "Sept 2022 — Sept 2023",
-    bullets: [
-      "Official student chapter under the CSE department promoting Computer Science since 2012.",
-      "Organized expert talks, site visits, workshops, contests and discussion forums to develop practical skills.",
-      "Provided professional networking opportunities with industry and academic experts.",
-      "Supported student learning and career growth through curated resources and events."
-    ],
-    tags: ["ACM","Technical Events","Workshops","Networking"],
-  }
 ];
-
 const Experience = () => {
   return (
     <div className="experience-page">
@@ -107,12 +154,7 @@ const Experience = () => {
 
       <div className="timeline">
         {jobexperiences.map((exp, i) => (
-          <ExperienceCard
-            key={i}
-            {...exp}
-            showLine={i !== jobexperiences.length - 1 && i != 1}
-            showDot={i !== jobexperiences.length - 1}
-          />
+          <ExperienceCard key={i} {...exp} />
         ))}
       </div>
       <br />
@@ -120,12 +162,7 @@ const Experience = () => {
 
       <div className="timeline">
         {clubs.map((exp, i) => (
-          <ExperienceCard
-            key={i}
-            {...exp}
-            showLine={i !== clubs.length - 1 && i != 1}
-            showDot={i !== clubs.length - 1}
-          />
+          <ExperienceCard key={i} {...exp} />
         ))}
       </div>
     </div>

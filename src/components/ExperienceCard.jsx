@@ -9,17 +9,9 @@ const ExperienceCard = ({
   section,
   achievements,
   tags,
-  showLine,
-  showDot,
 }) => {
   return (
     <div className="timeline-item">
-      {/* timeline dot */}
-      {showDot && <div className="dot" />}
-
-      {/* vertical line only if showLine = true */}
-      {showLine && <div className="vertical-line" />}
-
       <div className="card">
         <div className="card-header">
           <h3>{role}</h3>
@@ -29,9 +21,31 @@ const ExperienceCard = ({
         <p className="company">{company}</p>
 
         <ul className="bullets">
-          {bullets.map((b, i) => (
-            <li key={i}>{b}</li>
-          ))}
+          {bullets.map((item, idx) => {
+            if (typeof item === "string") {
+              return (
+                <li className="single-bullet" key={idx}>
+                  {item}
+                </li>
+              );
+            }
+
+            // If bullet has sub-bullets
+            return (
+              <li className="single-bullet" key={idx}>
+                {item.text}
+                {item.sub && (
+                  <ul className="sub-bullets">
+                    {item.sub.map((s, j) => (
+                      <li className="single-bullet" key={j}>
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            );
+          })}
         </ul>
 
         {section && <h4 className="sub-title">{section}</h4>}
@@ -39,7 +53,9 @@ const ExperienceCard = ({
         {achievements && (
           <ul className="bullets">
             {achievements.map((a, i) => (
-              <li key={i}>{a}</li>
+              <li className="single-bullet" key={i}>
+                {a}
+              </li>
             ))}
           </ul>
         )}

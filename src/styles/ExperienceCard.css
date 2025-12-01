@@ -12,33 +12,15 @@
 
 .timeline-item {
   position: relative;
-  padding-left: 5rem; /* space for timeline */
-  margin: 1rem;
+  padding-left: 1rem;
+  margin: 1.5rem;
 }
 
-.dot {
-  position: absolute;
-  left: 1.7rem;
-  top: 50%;
-  width: 14px;
-  height: 14px;
-  background: #8b5e34;
-  border-radius: 50%;
-  z-index: 3;
-}
-
-/* The connecting line — starts below the dot */
-.vertical-line {
-  position: absolute;
-  left: 2rem; /* perfectly centered with dot */
-  top: calc(
-    9.2rem + 12px
-  ); /* dot top + dot height → line begins UNDER the dot */
-  width: 3px;
-  height: calc(100% + 2rem); /* stops before next dot */
-  background: #c8a98b;
-  z-index: 1;
-  border-radius: 2px;
+.sub-bullets {
+  margin-top: 0.25rem;
+  margin-left: 1.25rem;
+  list-style-type: circle;
+  font-size: clamp(0.8rem, 0.7vw + 0.5rem, 1.05rem);
 }
 
 .card {
@@ -60,7 +42,7 @@
 
 .period {
   color: #555;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .company {
@@ -68,15 +50,24 @@
   margin-top: 0.3rem;
 }
 
-.card-header h3,
-.sub-title {
+.card-header h3 {
   margin: 0;
+  font-size: clamp(0.9rem, 1vw + 0.6rem, 1.3rem);
+}
+.sub-title {
+  margin: 0rem;
+  font-size: 1rem;
 }
 
 .bullets {
   margin-left: 1rem;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
+  font-size: clamp(0.8rem, 0.7vw + 0.5rem, 1.05rem);
+}
+
+.single-bullet {
+  margin: clamp(0.2rem, 0.2vw, 0.4rem);
 }
 
 .tags {

@@ -15,7 +15,7 @@ const papers = [
     id: 1,
     title:
       "Posture Extraction and Deduplication in Jathiswaram Dances via Similarity Filtering",
-    citation: "(Under Review @ Elsevier ICMLDE 2025)",
+    citation: "(Under Review @ Grenze GIJET)",
     authors: `<u>Dejah Madhusankar</u>,  S. Karthika, R. Srinivasan`,
   },
   {
@@ -62,14 +62,15 @@ const papers = [
 const exp = [
   {
     role: "Summer Research Intern",
-    company: "Crypto Lab, Indian Institute of Technology (IIT) Kharagpur, India",
+    company:
+      "Crypto Lab, Indian Institute of Technology (IIT) Kharagpur, India",
     period: "Jun 2023- Aug 2023",
     bullets: [
       "Advisor: Dr. Indranil Sengupta.",
       "Built a network scanning tool (similar to Nmap) with C/C++ using Socket Programming.",
-      "Explored extension of SVD-based cepstral-domain watermarking (from audio) to 3D-DCT/SVD domains of video sequences."
+      "Explored extension of SVD-based cepstral-domain watermarking (from audio) to 3D-DCT/SVD domains of video sequences.",
     ],
-    tags: ["Socket Programming","C/C++","Computer Networks"],
+    tags: ["Socket Programming", "C/C++", "Computer Networks"],
   },
   {
     role: "ML Research Assistant",
@@ -80,8 +81,13 @@ const exp = [
       "Developed and optimized ML and DL algorithms for various ongoing projects in NLP and Image Processing.",
       "Provided comprehensive coding support and identified research gaps through literature surveys.",
     ],
-    tags: ["Deep Learning", "Python","Natural Language Processing","Machine Learning"],
-  }
+    tags: [
+      "Deep Learning",
+      "Python",
+      "Natural Language Processing",
+      "Machine Learning",
+    ],
+  },
 ];
 
 const Research = () => {
