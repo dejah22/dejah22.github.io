@@ -19,10 +19,10 @@ const jobexperiences = [
         ],
       },
       "Collaborated with global banking clients to deliver and scale payment engines for high-volume portfolios.",
-      "Scaled to support near real-time processing for a portfolio of 2M+ active loans, exceeding performance and reliability targets.",
+      "Contributed to scaling payment engines to support near real-time processing for a portfolio of 2M+ active loans.",
       "Modernizing legacy pipelines by re-engineering COBOL mainframe workflows to event-driven Java microservices.",
       "Mentored and trained 3 new interns for 6 months.",
-      "Actively contributed to hiring drives by serving on technical interview panels.",
+      "Served on technical interview panels and actively contributed to hiring drives.",
       "Delivered monthly engineering seminars on emerging technologies and modern problem-solving approaches.",
     ],
     section: "Recognition",
@@ -47,6 +47,7 @@ const jobexperiences = [
     company: "Sagent Lending Technologies",
     period: "Jan 2024 — Jun 2024",
     bullets: [
+      "Independently analyzed, proposed, and led a container-slimming and load-optimization strategy to reduce Kubernetes deployment bottlenecks by ~35% across platforms. This effort earned me ownership of the subsequent workflow, company-wide recognition as the top performer among 22 interns, and a full-time offer.",
       {
         text: "Developed multiple web-based full-stack features across 3 internal projects:",
         sub: [
@@ -55,7 +56,6 @@ const jobexperiences = [
           "Worked on optimizing database queries and improving overall application performance.",
         ],
       },
-      "Independently analyzed, proposed, and led a container-slimming and load-optimization strategy to reduce Kubernetes deployment bottlenecks by ~35% across platforms. This effort earned me ownership of the subsequent workflow, company-wide recognition as the top performer among 22 interns, and a full-time offer.",
       "Automated the GraphQL → TypeORM type-generation process, and accelerated release cycles by 25% (measured by the managerial unit).",
       "Served as a local outreach deputy, supporting community and organizational initiatives.",
     ],
@@ -69,7 +69,7 @@ const jobexperiences = [
       {
         text: "Contributed to the development of an LLM-based AI assistant to analyze post-meeting transcripts for improved sales.",
         sub: [
-          "Built custom transcript-cleaning modules to turn raw call data into structured inputs.",
+          "Built custom transcript-cleaning modules to turn raw meeting transcripts into structured inputs.",
           "Integrated OpenAI APIs to deliver high-quality summaries, Q&A responses, analytical insights, and auto-generated action items.",
         ],
       },
@@ -97,31 +97,51 @@ const clubs = [
       {
         text: "TechVibe, INVENTE (2022-2024)- Annual Techfest Newsletter of Dept. of Computer Science & Engineering, SSNCE",
         sub: [
-          "Promoted for outstanding contributions as Deputy Head (2022) to Head (2023-2024).",
+          "Promoted for outstanding contributions as Managing Editor (2022) to Head Editor (2023-2024).",
+          "Led a 20-member team and covered campus-wide tech events organized as part of INVENTE (SSNCE's National TechFest), 2023 and 2024.",
           "Covered emerging CS research, industry trends, and student hackathons, reaching 3000+ students and faculty.",
-          "Led a 20-member team.",
+        ],
+      },
+      {
+        text: "SSN-ACM Student Chapter (2023-2024) - Dept. of Computer Science & Engineering, SSNCE",
+        sub: [
+          "Led a 5-member team, covering departmental events, latest research and student achievements.",
+          "Led final-stage design, article review & management.",
+          "Established a peer-review process that improved content quality and increased student contributions by 20%",
         ],
       },
       {
         text: "Vibrations (2020-2021) - Quarterly Newsletter of the Dept. of Sciences and Humanities, SSNCE",
         sub: [
-          "Promoted for outstanding contributions as Secretary (2020) to Head (2021).",
-          "Led design, article review & management of Vibrations, SSNCE's Humanities Deparment's newsletter.",
-          "Led a 15-member team.",
-        ],
-      },
-      {
-        text: "Vibrations (2020-2021) - Quarterly Newsletter of the Dept. of Sciences and Humanities, SSNCE",
-        sub: [
-          "Promoted for outstanding contributions as Secretary (2020) to Head (2021).",
-          "Led design, article review & management of Vibrations, SSNCE's Humanities Deparment's newsletter.",
-          "Led a 15-member team.",
+          "Promoted for outstanding contributions as Managing Editor (2020) to Head Editor (2021).",
+          "Led final-stage design, article review & management.",
+          "Led a 15-member team, while coordinating with faculty advisors.",
         ],
       },
     ],
-    section: "Recognition",
-    achievements: [
-      "Promoted from Deputy Head (2022) to Head (2023) of Tech Editorial Committee.",
+    tags: ["Leadership", "Content editing", "Team Management"],
+  },
+  {
+    role: "Managing Editor, SSNCE's Technical Editorital Teams",
+    company: "SSN College of Engineering",
+    period: "Sept 2020 — May 2024",
+    bullets: [
+      {
+        text: "TechVibe, INVENTE (2022-2023)- Annual Techfest Newsletter of Dept. of Computer Science & Engineering, SSNCE",
+        sub: [
+          "Promoted for outstanding contributions as Editorial Member (2021) to Managing Editor (2022-2023).",
+          "Covered campus-wide tech events organized as part of INVENTE (SSNCE's National TechFest), 2022.",
+          "Coordinated and co-supervised a 20-member team.",
+        ],
+      },
+      {
+        text: "Vibrations (2020-2021) - Quarterly Newsletter of the Dept. of Sciences and Humanities, SSNCE",
+        sub: [
+          "Led content review & management",
+          "Carried out pre-final article edits, technical revisions, and layout.",
+          "Coordinated and supervised a 15-member team.",
+        ],
+      },
     ],
     tags: ["Leadership", "Content editing", "Team Management"],
   },
@@ -130,8 +150,10 @@ const clubs = [
     company: "SSN College of Engineering",
     period: "May 2022 — May 2024",
     bullets: [
+      "Promoted from Member (2022) to Deputy Head (2023-2024) of the Machine Learning division of the college coding club.",
       "Co-conducted workshops on NLP, Computer Vision, and ML fundamentals.",
       "Mentored juniors in ML projects and Kaggle competitions.",
+      "Conducted discussions on recent ML research papers, advancements and trends.",
     ],
     tags: ["Machine Learning", "Python", "Leadership", "Workshops", "Events"],
   },
@@ -141,7 +163,8 @@ const clubs = [
     period: "May 2021 — Jun 2022",
     bullets: [
       "Co-organized campus-wide dance events and competitions.",
-      "Coordinated annual cultural fest activities with a 20-member team",
+      "Conducted club meetings and auditions; increased outreach and voluntary teaching sessions to local communities.",
+      "Coordinated a 20-member team.",
       "Collaborated with other clubs for cultural-fests and community events.",
     ],
     tags: ["Event Management", "Cultural Activities", "Dance", "Leadership"],
