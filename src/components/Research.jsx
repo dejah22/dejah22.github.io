@@ -87,15 +87,16 @@ const exp = [
   },
   {
     role: "ML Research Assistant",
-    company: "SSN College of Engineering",
+    company: "NLP Lab, SSN College of Engineering, Chennai, India",
     period: "Aug 2022 - Jan 2023",
     bullets: [
       "Advisor: Dr. Bharathi.",
       "Served as first author on a competitive shared task paper, led model development, and presented findings at a national conference.",
       "Developed and optimized ML and DL algorithms for various ongoing projects in NLP and Image Processing.",
-      "Provided comprehensive coding support and identified research gaps through literature surveys.",
       "Proposed alternative modeling ideas and demonstrated feasibility to the group with prototypes.",
-      "Conducted in-depth literature surveys, identified research gaps, delivered departmental seminars, and guided junior interns and peers.",
+      "Provided comprehensive coding support and identified research gaps through literature surveys.",
+
+      "Delivered departmental seminars, and guided junior interns and peers.",
     ],
     tags: [
       "Deep Learning",

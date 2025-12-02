@@ -92,27 +92,26 @@ const clubs = [
   {
     role: "Editor-in-Chief, SSNCE's Technical Editorital Teams",
     company: "SSN College of Engineering",
-    period: "Sept 2020 — May 2024",
+    period: "Sept 2021 — May 2024",
     bullets: [
-      {
-        text: "TechVibe, INVENTE (2023-2024)- Annual Techfest Newsletter of Dept. of Computer Science & Engineering, SSNCE",
-        sub: [
-          "Led a 20-member team and covered campus-wide tech events organized as part of INVENTE (SSNCE's National TechFest), 2023 and 2024.",
-          "Covered emerging CS research, industry trends, and student hackathons, reaching 3000+ students and faculty.",
-        ],
-      },
       {
         text: "SSN-ACM Student Chapter (2023-2024) - Dept. of Computer Science & Engineering, SSNCE",
         sub: [
           "Led a 5-member team, covering departmental events, latest research and student achievements.",
-          "Led final-stage design, article review & management.",
           "Established a peer-review process that improved content quality and increased student contributions by 20%",
+          "Wrote and reviewed blog content for the documentation and promotion of club's events.",
         ],
       },
       {
-        text: "Vibrations (2020-2021) - Quarterly Newsletter of the Dept. of Sciences and Humanities, SSNCE",
+        text: "TechVibe, INVENTE (2023-2024)- Annual Techfest Newsletter of Dept. of Computer Science & Engineering, SSNCE",
         sub: [
-          "Promoted for outstanding contributions as Managing Editor (2020) to Head Editor (2021).",
+          "Led a 20-member team and covered campus-wide tech events organized as part of INVENTE (SSNCE's National TechFest), 2023.",
+          "Covered emerging CS research, industry trends, and student hackathons, reaching 3000+ students and faculty.",
+        ],
+      },
+      {
+        text: "Vibrations (2021-2022) - Quarterly Newsletter of the Dept. of Sciences and Humanities, SSNCE",
+        sub: [
           "Led final-stage design, article review & management.",
           "Led a 15-member team, while coordinating with faculty advisors.",
         ],
