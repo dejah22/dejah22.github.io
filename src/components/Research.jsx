@@ -67,8 +67,21 @@ const exp = [
     period: "Jun 2023- Aug 2023",
     bullets: [
       "Advisor: Dr. Indranil Sengupta.",
-      "Built a network scanning tool (similar to Nmap) with C/C++ using Socket Programming.",
-      "Explored extension of SVD-based cepstral-domain watermarking (from audio) to 3D-DCT/SVD domains of video sequences.",
+      "Built a command-line network scanning tool (similar to Nmap) using low-level C/C++ using Socket Programming.",
+      {
+        text: "Independently explored video watermarking approaches from previous audio-level methods used in the lab",
+        sub: [
+          "Explored extension of SVD-based cepstral-domain watermarking (from audio) to 3D-DCT/SVD domains of video sequences.",
+          "Implemented attack simulations (compression, noise addition, frame dropping) to test watermark robustness.",
+          "Identified gaps under adversarial transformations, and presented findings to the group.",
+        ],
+      },
+      {
+        text: "Assisted with vulnerability analyses, prototype developments, and tool optimizations in ongoing research projects.",
+        sub: [
+          "In one case, analyzed and proposed the usage of calligraphy stroke theories to create AI-resistant symbol sets for CAPTCHA.",
+        ],
+      },
     ],
     tags: ["Socket Programming", "C/C++", "Computer Networks"],
   },
@@ -78,8 +91,11 @@ const exp = [
     period: "Aug 2022 - Jan 2023",
     bullets: [
       "Advisor: Dr. Bharathi.",
+      "Served as first author on a competitive shared task paper, led model development, and presented findings at a national conference.",
       "Developed and optimized ML and DL algorithms for various ongoing projects in NLP and Image Processing.",
       "Provided comprehensive coding support and identified research gaps through literature surveys.",
+      "Proposed alternative modeling ideas and demonstrated feasibility to the group with prototypes.",
+      "Conducted in-depth literature surveys, identified research gaps, delivered departmental seminars, and guided junior interns and peers.",
     ],
     tags: [
       "Deep Learning",

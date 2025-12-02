@@ -95,9 +95,8 @@ const clubs = [
     period: "Sept 2020 — May 2024",
     bullets: [
       {
-        text: "TechVibe, INVENTE (2022-2024)- Annual Techfest Newsletter of Dept. of Computer Science & Engineering, SSNCE",
+        text: "TechVibe, INVENTE (2023-2024)- Annual Techfest Newsletter of Dept. of Computer Science & Engineering, SSNCE",
         sub: [
-          "Promoted for outstanding contributions as Managing Editor (2022) to Head Editor (2023-2024).",
           "Led a 20-member team and covered campus-wide tech events organized as part of INVENTE (SSNCE's National TechFest), 2023 and 2024.",
           "Covered emerging CS research, industry trends, and student hackathons, reaching 3000+ students and faculty.",
         ],
@@ -124,7 +123,7 @@ const clubs = [
   {
     role: "Managing Editor, SSNCE's Technical Editorital Teams",
     company: "SSN College of Engineering",
-    period: "Sept 2020 — May 2024",
+    period: "Sept 2020 — May 2023",
     bullets: [
       {
         text: "TechVibe, INVENTE (2022-2023)- Annual Techfest Newsletter of Dept. of Computer Science & Engineering, SSNCE",
@@ -146,11 +145,11 @@ const clubs = [
     tags: ["Leadership", "Content editing", "Team Management"],
   },
   {
-    role: "ML Deputy Head (Coding Club)",
+    role: "Member; Deputy Head, ML Coding Club",
     company: "SSN College of Engineering",
     period: "May 2022 — May 2024",
     bullets: [
-      "Promoted from Member (2022) to Deputy Head (2023-2024) of the Machine Learning division of the college coding club.",
+      "Promoted from Technical Member (2022-2023) to Deputy Head (2024) of the Machine Learning division of the college coding club.",
       "Co-conducted workshops on NLP, Computer Vision, and ML fundamentals.",
       "Mentored juniors in ML projects and Kaggle competitions.",
       "Conducted discussions on recent ML research papers, advancements and trends.",
@@ -158,7 +157,7 @@ const clubs = [
     tags: ["Machine Learning", "Python", "Leadership", "Workshops", "Events"],
   },
   {
-    role: "Fine Arts Club - Co-Chair",
+    role: "Co-Chair, Fine Arts Club",
     company: "SSN College of Engineering",
     period: "May 2021 — Jun 2022",
     bullets: [
