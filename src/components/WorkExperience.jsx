@@ -158,7 +158,7 @@ const clubs = [
   {
     role: "Co-Chair, Fine Arts Club",
     company: "SSN College of Engineering",
-    period: "May 2021 — Jun 2022",
+    period: "May 2022 — Jun 2023",
     bullets: [
       "Co-organized campus-wide dance events and competitions.",
       "Conducted club meetings and auditions; increased outreach and voluntary teaching sessions to local communities.",

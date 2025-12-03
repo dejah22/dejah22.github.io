@@ -8,13 +8,12 @@ const papers = [
   {
     id: 0,
     title:
-      "Pose and Expression Inference in Bharatanatyam using Region-Based Analysis and Hierarchical Modeling (Ongoing)",
+      "Bharatanatyam Pose Generation and Expression Inference using Region-Based Analysis (Ongoing)",
     authors: `<u>Dejah Madhusankar</u>, S. Karthika, R. Srinivasan`,
   },
   {
     id: 1,
-    title:
-      "Posture Extraction and Deduplication in Jathiswaram Dances via Similarity Filtering",
+    title: "Posture Extraction and Deduplication in Bharatanatyam Dances",
     citation: "(Under Review @ Grenze GIJET)",
     authors: `<u>Dejah Madhusankar</u>,  S. Karthika, R. Srinivasan`,
   },
